@@ -25,26 +25,26 @@ app.post('/callback', line.middleware(config), (req, res) => {
 });
 
 var d = new Date();
+var dateTime = require('node-datetime');
+var dt = dateTime.create();
 
-function handleEventsapa(event) {
+
+function handleEvent(event) {
     if(event.message.text == "hai"){
       const echo = { type: 'text', text: "Halo juga :)·" };
       return client.replyMessage(event.replyToken, echo);
     }
+    else if(event.message.text == "jam"){
+      const echo = { type: 'text', text: d.gethours };
+      return client.replyMessage(event.replyToken, echo);
+      dt.format('m/d/Y H:M:S');
+console.log(new Date(dt.now()));
+    }   
   
     const echo = { type: 'text', text: "Saya tidak mengerti, saya simpan dulu" };
     return client.replyMessage(event.replyToken, echo);
 }
 
-function handleEvent(event) {
-    if(event.message.text == "malam"){
-      const echo = { type: 'text', text: "malam juga :)·" };
-      return client.replyMessage(event.replyToken, echo);
-    }
-  
-    const echo = { type: 'text', text: "Saya tidak mengerti, saya simpan dulu" };
-    return client.replyMessage(event.replyToken, echo);
-}
 
 // listen on port
 const port = 3000;

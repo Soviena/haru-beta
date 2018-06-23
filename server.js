@@ -1,22 +1,42 @@
-// server.js
-// where your node app starts
 
-// init project
-var express = require('express');
-var app = express();
+const line = require('@line/bot-sdk');
+const express = require('express');
+const axios = require('axios');
 
-// we've started you off with Express, 
-// but feel free to use whatever libs or frameworks you'd like through `package.json`.
+const config = {
+  channelAccessToken: "t2TwN0KQLEz6JWiSFZo31aVI5yzybQBPJx6Dl135Vz1mnFpIGhB7xREENvuZtiZtB4kuqmdrJdUYdJR+QhNO/MPxr0Pz5HVJJNn638hhtFeEcNpMqOT/BYioHnv+70z8GbockMeZlYvJEcv/9Vu2YgdB04t89/1O/w1cDnyilFU=",
+  channelSecret: "df410e822d65f2584dcb583288dd4ee3",
+};
 
-// http://expressjs.com/en/starter/static-files.html
-app.use(express.static('public'));
+// create LINE SDK client
+const client = new line.Client(config);
+const app = express();
 
-// http://expressjs.com/en/starter/basic-routing.html
-app.get("/", function (request, response) {
-  response.sendFile(__dirname + '/views/index.html');
+// register a webhook handler with middleware
+// about the middleware, please refer to doc
+app.post('/callback', line.middleware(config), (req, res) => {
+  Promise
+    .all(req.body.events.map(handleEvent))
+    .then((result) => res.json(result))
+    .catch((e)=>{
+      console.log(e);
+    });
+
 });
 
-// listen for requests :)
-var listener = app.listen(process.env.PORT, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
+function handleEvent(event) {
+  
+    if(event.message.text == "hai"){
+      const echo = { type: 'text', text: "Halo juga :)·" };
+      return client.replyMessage(event.replyToken, echo);
+    }
+
+    const echo = { type: 'text', text: "Saya tidak mengerti, saya simpan dulu" };
+    return client.replyMessage(event.replyToken, echo);
+}
+
+// listen on port
+const port = 3000;
+app.listen(port, () => {
+  console.log(`listening on ${port}`);
 });

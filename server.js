@@ -25,8 +25,6 @@ app.post('/callback', line.middleware(config), (req, res) => {
 });
 
 var d = new Date();
-var dateTime = require('node-datetime');
-var dt = dateTime.create();
 
 
 function handleEvent(event) {
@@ -34,11 +32,17 @@ function handleEvent(event) {
       const echo = { type: 'text', text: "Halo juga :)·" };
       return client.replyMessage(event.replyToken, echo);
     }
-    else if(event.message.text == "jam"){
-      const echo = { type: 'text', text: d.gethours };
+    else if(event.message.text == "hitung"){
+      const echo = { type: 'text', text: "masukkan angka pertama" };
       return client.replyMessage(event.replyToken, echo);
-      dt.format('m/d/Y H:M:S');
-console.log(new Date(dt.now()));
+       
+      function handleEvent(event) {
+         
+         if(event.message.text == "hai"){
+          const echo = { type: 'text', text: "Halo juga :)·" };
+          return client.replyMessage(event.replyToken, echo);
+       }
+      
     }   
   
     const echo = { type: 'text', text: "Saya tidak mengerti, saya simpan dulu" };

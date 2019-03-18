@@ -7,7 +7,5 @@ exports.run = async (client, message, args) => {
     const embed = new client.vembed();
     embed.setTitle(`${member.user.username}'s Profile Picture.`)
     embed.setImage(member.user.displayAvatarURL);
-    console.log(member.user);
-    console.log(member);
     message.channel.send(embed);
 }

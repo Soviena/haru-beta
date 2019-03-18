@@ -24,6 +24,7 @@
     "moment": "^2.24.0",
     "nekos.life": "^2.0.4",
     "node-opus": "^0.3.1",
-    "ffmpeg": "^0.0.4"
+    "ffmpeg": "^0.0.4",
+    "snekfetch": "^4.0.4"
   }
 }

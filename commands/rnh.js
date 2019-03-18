@@ -4,8 +4,14 @@ exports.run = (client, message, args) => {
     };
   
     if(args === undefined || args.length == 0){
-    var x = '1';
-    }  
+    var x = 1;
+    }  else {
+    if(args > 10){
+    return message.reply("Maximal 10");
+    }  else {
+    x = args;
+    }
+    }
   
     const cat = require('nekos.life');
     const neko = new cat();
@@ -13,9 +19,13 @@ exports.run = (client, message, args) => {
     async function rnh() {
     const embed = new client.vembed();
     
+    var i;
+    for (i = 0; i < x; i++) { 
+
     const { url }  = await neko.nsfw.randomHentaiGif();
     embed.setImage(url);    
     message.channel.send(embed);
+    }
     }
     
     rnh();

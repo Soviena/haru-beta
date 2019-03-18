@@ -1,6 +1,6 @@
 exports.run = (client, message, args) => {
 if(args === undefined || args.length == 0){
-  args = "himself"
+  args = "dirinya sendiri"
 }
 const cat = require('nekos.life');
 const neko = new cat();
@@ -11,7 +11,7 @@ const user = message.author.id;
 
 const { url }  = await neko.sfw.slap();
 embed.setImage(url);
-embed.setDescription(`<@${user}> Slapped ${args}`);
+embed.setDescription(`<@${user}> Menampar ${args}`);
 message.channel.send(embed);
 }
 

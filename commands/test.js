@@ -3,5 +3,6 @@ exports.run = (client, message, args) => {
     const member = message.guild.member(user);
     const konfig = process.env
     console.log(konfig.token);
-    //message.channel.send(member);
+    console.log(member.joinedTimestamp);
+  
 }

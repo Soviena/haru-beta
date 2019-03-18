@@ -6,11 +6,11 @@ exports.run = async (client, message, args) => {
         const self = message.author.id
         member = message.guild.member(self);
     }
-    const joinServer = moment(member.user.joinedAt).format('llll');
+    const joinServer = moment(member.joinedAt).format('llll');
     const embed = new client.vembed();
     embed.setTitle(`${member.user.username}'s Profile info.`)
-    embed.addField('Joined at:', `${moment.utc(member.user.joinedAt).format('dddd, MMMM Do YYYY, HH:mm:ss')}`, true)
+    embed.addField('Joined at:', `${moment.utc(member.joinedAt).format('dddd, MMMM Do YYYY, HH:mm:ss')}`, true)
     message.channel.send(embed);
-    console.log(member.user.joinedAt);
+    console.log(member.joinedAt);
     
 }

@@ -21,6 +21,9 @@
     "enmap": "^4.8.1",
     "simple-youtube-api": "^5.1.1",
     "ytdl-core": "^0.29.0",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "nekos.life": "^2.0.4",
+    "node-opus": "^0.3.1",
+    "ffmpeg": "^0.0.4"
   }
 }

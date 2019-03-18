@@ -8,11 +8,10 @@ const ytdl = require('ytdl-core');
 
 const client = new Discord.Client();
 const klien = new Client({ disableEveryone: true });
-const config = require("./sekrit.json");
+const config = require("process.env");
 const GOOGLE_API_KEY = config.GOOGLE_API_KEY;
 const youtube = new YouTube(GOOGLE_API_KEY);
 const queue = new Map();
-
 
 // structure
 

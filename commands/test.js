@@ -1,7 +1,7 @@
 exports.run = (client, message, args) => {
     const user = message.author.id;
     const member = message.guild.member(user);
-    const konfig = process.env.token
-    console.log(konfig);
+    const konfig = process.env
+    console.log(konfig.token);
     //message.channel.send(member);
 }

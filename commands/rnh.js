@@ -1,7 +1,12 @@
-exports.run = (client, message) => {
+exports.run = (client, message, args) => {
     if (message.channel.nsfw === false) {
         return message.channel.send("Family Friendly")
     };
+  
+    if(args === undefined || args.length == 0){
+    var x = '1';
+    }  
+  
     const cat = require('nekos.life');
     const neko = new cat();
     

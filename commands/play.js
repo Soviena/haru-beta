@@ -14,11 +14,11 @@ exports.run = async (client, message, args) => {
   console.log(args);
 
   if (url.match(/^https?:\/\/(www.youtube.com|youtube.com)\/playlist(.*)$/)) {
-    const playlist = await youtube.getPlaylist(url);
+    const playlist = await client.youtube.getPlaylist(url);
     const videos = await playlist.getVideos();
     for (const video of Object.values(videos)) {
-      const video2 = await youtube.getVideoByID(video.id); // eslint-disable-line no-await-in-loop
-      await handleVideo(video2, message, voiceChannel, true); // eslint-disable-line no-await-in-loop
+      const video2 = await client.youtube.getVideoByID(video.id); // eslint-disable-line no-await-in-loop
+      await client.handleVideo(video2, message, voiceChannel, true); // eslint-disable-line no-await-in-loop
     }
     return message.channel.send(`✅ Playlist: **${playlist.title}** Telah di tambahkan ke daftar`);
   } else {

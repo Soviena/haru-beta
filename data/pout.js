@@ -1,5 +1,4 @@
 module.exports = (client, message) => {
-  var pout = ['','','','','',];
-  
+  var pout = ['satu','dua','tiga','empat','lima'];
   
 }

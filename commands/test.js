@@ -1,6 +1,15 @@
-exports.run = async (client, message, args) => {
-  const db = require('quick.db');
-  const imp = require('../data/pout.js');
-  console.log(imp);
+exports.run = (client, message) => {
+
+    const embed = new client.vembed();
+    var pout = require('../data/pout'),
+    poutkeyarr = Object.keys(pout),
+    urlindex = Math.floor(Math.random() * poutkeyarr.length),
+    rpout = pout[poutkeyarr[urlindex]];
+
+    embed.setImage(rpout);
+    embed.setDescription(`<@${message.author.id}> Pouted`);
+    message.channel.send(embed);
+    console.log(urlindex);
     
+
 }

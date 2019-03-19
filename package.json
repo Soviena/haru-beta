@@ -25,6 +25,7 @@
     "nekos.life": "^2.0.4",
     "node-opus": "^0.3.1",
     "ffmpeg": "^0.0.4",
-    "snekfetch": "^4.0.4"
+    "snekfetch": "^4.0.4",
+    "quick.db": "^6.3.2"
   }
 }

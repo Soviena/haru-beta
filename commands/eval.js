@@ -2,15 +2,10 @@ exports.run = (client, message, args) => {
   
       const embed = new client.vembed();
       const warningTokenMessage = ["Tertipu Kamu Bangsat", "iNi.ToK3n.Bu.At.(K)amU", "Kepo cok", "Kamu Gay", "bapak kau jual ganja di BMKG"]
-      if (message.author.id !== '331265944363991042') return;
-
+      if (message.author.id !== '347756970369089566') return;
     try {
-
       let codein = args.join(' ');
-
-      let code = eval(codein);
-
-      
+      let code = eval(codein);      
       if (!codein) return;
       if (codein.includes(`SECRET`)) {
         code = warningTokenMessage[Math.floor(Math.random() * warningTokenMessage.length)];

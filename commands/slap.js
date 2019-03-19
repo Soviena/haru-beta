@@ -1,6 +1,8 @@
 exports.run = (client, message, args) => {
 if(args === undefined || args.length == 0){
-  args = "dirinya sendiri"
+  var txt = "dirinya sendiri"
+} else {
+  var txt = args.join(" "); 
 }
 const cat = require('nekos.life');
 const neko = new cat();
@@ -8,8 +10,7 @@ const neko = new cat();
 async function slaps() {
 const embed = new client.vembed();
 const user = message.author.id;
-
-let txt = args.join(" ");  
+ 
   
 const { url }  = await neko.sfw.slap();
 embed.setImage(url);

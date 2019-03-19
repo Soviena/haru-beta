@@ -28,7 +28,7 @@ module.exports = {
   "url26": 'https://external-preview.redd.it/yfx_sXKcIzXC-jBP3krnvlYU_2CxVWCuCR-U9RNWid8.gif?width=500&s=f9ad7ac499ece200fe55e6db45249586acbb0c1b',
   "url27": 'https://img.fireden.net/a/image/1496/41/1496418063304.gif',
   "url28": 'https://66.media.tumblr.com/e0e16beebf064fd2ea6f27c6904db51e/tumblr_os6rf0Zkzr1tr842yo1_r1_400.gif',
-  "url29": 'https://i.pinimg.com/originals/ba/95/6f/ba956f39d789ee5327cce7b98df590e6.gif',
+  "url29": 'https://thumbs.gfycat.com/ForkedKaleidoscopicCollie-size_restricted.gif',
   "url30": 'https://66.media.tumblr.com/b721908aaf94d6ceff1d572789dd651c/tumblr_ni8kapn8bo1ti6a52o1_500.gif',
   "url31": 'https://i.redd.it/o358kfgbtei21.jpg',
   "url32": 'https://archive-media-0.nyafuu.org/c/image/1513/18/1513182310920.jpg',

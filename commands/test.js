@@ -8,12 +8,8 @@ exports.run = async (client, message, args) => {
     }
     const joinServer = moment(member.joinedAt).format('llll');
     const embed = new client.vembed();
-    var oneDay = 24*60*60*1000;
-    var time = new Date(moment.utc(member.joinedAt).format('YYYY,MM,DD'));
-    var a = new Date(moment.utc(member.lastMessage.createdTimestamp).format('YYYY,MM,DD'));
-    var diffDays = Math.round(Math.abs((a.getTime() - time.getTime())/(oneDay)));
-  
-    console.log(time);
-    console.log(a);
-    console.log(diffDays);
+    
+    var size = member.guild.members.filter(member => !member.user.bot).size;
+    console.log(size);
+    
 }

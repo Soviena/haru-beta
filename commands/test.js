@@ -8,9 +8,10 @@ exports.run = async (client, message, args) => {
     }
     const joinServer = moment(member.joinedAt).format('llll');
     const embed = new client.vembed();
-    var time = cz
-    var a = member.lastMessage.createdTimestamp;
-    var day = a - time;
+    v
+    var time = moment.utc(member.joinedAt).format('YYYY/MM/DD');
+    var a = moment.utc(member.lastMessage.createdTimestamp).format('YYYY/MM/DD');
+  
     console.log(time);
-    console.log(day);
+    console.log(a);
 }

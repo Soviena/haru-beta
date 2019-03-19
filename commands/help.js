@@ -1,8 +1,8 @@
 exports.run = (client, message, args) => {
-    embedhelp = new client.vembed();
-    embedadm = new client.vembed();
-    embednsfw = new client.vembed();
-    embedmsc = new client.vembed();
+    const embedhelp = new client.vembed();
+    const embedadm = new client.vembed();
+    const embednsfw = new client.vembed();
+    const embedmsc = new client.vembed();
 
     embedhelp.setAuthor("List Command");
     embedhelp.addField("*avatar [mention] ","dapatkan profil Pic seseorang / dirimu sendiri");

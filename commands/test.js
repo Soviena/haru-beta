@@ -8,11 +8,10 @@ exports.run = async (client, message, args) => {
     }
     const joinServer = moment(member.joinedAt).format('llll');
     const embed = new client.vembed();
-    embed.setTitle(`${member.user.username}'s Profile info.`)
-    embed.addField('Joined at:', `${moment.utc(member.user.joinedAt).format('dddd, MMMM Do YYYY, HH:mm:ss')}`, true)
-    message.channel.send(embed);
-    var time = member
-    var a = member.MessageContent;
+    var time = member.joinedAt;
+    var a = member.lastMessage.createdTimestamp;
+    var day = a - time;
     console.log(time);
-    console.log(a);
+    console.log(day);
+    message.channel.send(moment.utc(day).format(`d`));
 }

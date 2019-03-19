@@ -11,6 +11,6 @@ exports.run = async (client, message, args) => {
     embed.setTitle(`${member.user.username}'s Profile info.`)
     embed.addField('Joined at:', `${moment.utc(member.joinedAt).format('dddd, MMMM Do YYYY, HH:mm:ss')}`, true)
     message.channel.send(embed);
-    time = member.user;
-    console.log();
+    var time = member;
+    console.log(time);
 }

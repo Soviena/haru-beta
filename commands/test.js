@@ -1,8 +1,7 @@
 exports.run = (client, message, args) => {
-	  const matches = args.match(/\d/);
-	  const ch = matches[1];
-    console.log(ch);
-    message.channel.send(ch);
+    var regex = /\d/g;
+    var ch = regex.exec(args[0]);
+    console.log(ch[0]);
   
 
 }

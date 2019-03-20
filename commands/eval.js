@@ -7,7 +7,7 @@ exports.run = (client, message, args) => {
       let codein = args.join(' ');
       let code = eval(codein);      
       if (!codein) return;
-      if (codein.includes(`SECRET`)) {
+      if (codein.includes(`token`)) {
         code = warningTokenMessage[Math.floor(Math.random() * warningTokenMessage.length)];
         console.log(`${message.author.tag} use this eval to against the tokens and privacy.`)
       } else {

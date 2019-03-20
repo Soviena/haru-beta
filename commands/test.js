@@ -1,13 +1,17 @@
 exports.run = (client, message, args) => {
+  const db = require('quick.db');
   
   if(message.author.id !== client.config.ownerID) {
   message.reply("Kamu Bukan Master Ku!");
   return;
   }
   
+  if db.has()
+  var server = 
+  
   //var ch = args[0].slice(2, -1);
   //args.shift();
-  var txt = args.join(' ');
+  //var txt = args.join(' ');
   //client.channels.get('556795240682618881').send(txt);
-  client.guilds.get('556788141202210816').channels.get('556795240682618881').send(txt)  
+  //client.guilds.get('556788141202210816').channels.get('556795240682618881').send(txt)  
 }

@@ -10,7 +10,7 @@ const list = sql.prepare("SELECT * FROM data DESC LIMIT 20;").all();
     .setColor(0x00AE86);
  
   for(const data of list) {
-    embed.addField(`${client.guilds.get(data.id).name}`, `--> ${message.guild.channels.get(data.channel).name}`);
+    embed.addField(`${client.guilds.get(data.id).name}`, `--> ${client.guilds.get(data.id).channels.get(data.channel).name}`);
   }
   message.channel.send({embed});
   

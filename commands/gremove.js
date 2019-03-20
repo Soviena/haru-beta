@@ -1,12 +1,12 @@
 exports.run = (client, message, args) => {
 const sql = client.serv; 
-sql.prepare('DELETE FROM data WHERE id =')
+
   
+  let data = client.getData.get(message.guild.id);
+  if (!data) { 
+    message.reply('Di server ini tidak ada integrasi Global Chat');
+  } else {
+    sql.prepare(`DELETE FROM data WHERE id = ${message.guild.id}`).run();
+    message.reply('Integrasi GLOBAL CHAT telah di hapus');  
+    }
 }
-
-
-DELETE
-FROM
- artists_backup
-WHERE
- artistid = 1;

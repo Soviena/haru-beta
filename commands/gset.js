@@ -1,8 +1,6 @@
 exports.run = (client, message, args) => {  
   const db = client.serv;
-  
-  console.log(args)
-  
+    
   var server = message.guild.id;
   
   let data = client.getData.get(server);

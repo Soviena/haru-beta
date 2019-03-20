@@ -3,8 +3,9 @@ exports.run = (client, message, args) => {
   message.reply("Kamu Bukan Master Ku!");
   return;
   }
-  
-  
+    
+  console.log(client.guilds.get('452594679213588482').name);
+
   //var server = 
   
   //var ch = args[0].slice(2, -1);

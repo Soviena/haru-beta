@@ -14,8 +14,7 @@ const youtube = new YouTube(GOOGLE_API_KEY);
 const queue = new Map();
 
 const SQLite = require("better-sqlite3");
-const sql = new SQLite('./data/db/data.sqlite');
-
+const serv = new SQLite('./data/db/server.sqlite');
 
 // structure
 
@@ -26,6 +25,11 @@ client.config = config;
 client.vembed = vembed;
 client.youtube = youtube;
 client.queue = queue;
+client.serv = serv;
+
+client.getData = serv.prepare("SELECT * FROM data WHERE id = ?");
+client.setData = serv.prepare("INSERT OR REPLACE INTO data (id, guild, channel) VALUES (@id, @guild, @channel);");
+client.getChannel = serv.prepare("SELECT * FROM data WHERE channel = ?");
 
 
 fs.readdir("./events/", (err, files) => {

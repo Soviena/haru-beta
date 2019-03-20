@@ -14,7 +14,7 @@ const youtube = new YouTube(GOOGLE_API_KEY);
 const queue = new Map();
 
 const SQLite = require("better-sqlite3");
-const sql = new SQLite('../data/db/data.sqlite');
+const sql = new SQLite('./data/db/data.sqlite');
 
 
 // structure

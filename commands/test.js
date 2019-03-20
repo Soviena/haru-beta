@@ -1,6 +1,7 @@
 exports.run = (client, message, args) => {
-    var ch = args[0].replace(/[^<>#]/g, '').trim();
-    console.log(ch);
+    var regex = /\d/g;
+    var ch = regex.exec(args[0]);
+    console.log(ch[0]);
   
 
 }

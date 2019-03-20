@@ -1,7 +1,7 @@
 exports.run = (client, message, args) => {
-    var regex = /\d/g;
-    var ch = regex.exec(args[0]);
-    console.log(ch[0]);
+    var ch = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    console.log(ch);
+    message.channel.send(ch);
   
 
 }

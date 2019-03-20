@@ -1,3 +1,4 @@
+
 exports.run = (client, message) => {
     if (message.channel.nsfw === false) {
         return message.channel.send("Family Friendly")
@@ -16,4 +17,5 @@ exports.run = (client, message) => {
     ca();
     
     }
+  
     

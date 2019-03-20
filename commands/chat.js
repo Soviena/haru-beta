@@ -1,3 +1,4 @@
+/*
 exports.run = (client, message, args) => {
 if(args === undefined || args.length == 0) return message.reply("Perlu teks cth:'*chat hi how are you ?'");
 
@@ -17,3 +18,4 @@ message.channel.stopTyping();
 answer();
 
 }
+*/

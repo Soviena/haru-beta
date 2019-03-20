@@ -1,3 +1,4 @@
+/*
 exports.run = (client, message, args) => {
 if(args === undefined || args.length == 0){
   args = "dirinya sendiri.. Dasar jomblo!!"
@@ -18,3 +19,4 @@ message.channel.send(embed);
 hg();
 
 }
+*/

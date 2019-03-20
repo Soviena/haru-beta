@@ -1,16 +1,11 @@
-exports.run = (client, message, args) => {
-  const db = client.db  
+exports.run = (client, message, args) => {  
   if(message.author.id !== client.config.ownerID) {
   message.reply("Kamu Bukan Master Ku!");
   return;
   }
   
-  var id = message.author.id;
-  if db.has(`${id}.test` === false){
-  var testdata = new db.table('data');
-  testdata.
-  }
-  var server = 
+  
+  //var server = 
   
   //var ch = args[0].slice(2, -1);
   //args.shift();

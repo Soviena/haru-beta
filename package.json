@@ -26,6 +26,7 @@
     "node-opus": "^0.3.1",
     "ffmpeg": "^0.0.4",
     "snekfetch": "^4.0.4",
-    "quick.db": "^6.3.2"
+    "quick.db": "^6.3.2",
+    "better-sqlite3": "^5.4.0"
   }
 }

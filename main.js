@@ -13,7 +13,9 @@ const GOOGLE_API_KEY = config.GOOGLE_API_KEY;
 const youtube = new YouTube(GOOGLE_API_KEY);
 const queue = new Map();
 
-const db = require('quick.db');
+const SQLite = require("better-sqlite3");
+const sql = new SQLite('../data/db/data.sqlite');
+
 
 // structure
 
@@ -24,7 +26,7 @@ client.config = config;
 client.vembed = vembed;
 client.youtube = youtube;
 client.queue = queue;
-client.db = db
+
 
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);

@@ -2,13 +2,14 @@ exports.run = (client, message) => {
 const cat = require('nekos.life');
 const neko = new cat();
 
-async function fact() {
+async function negif() {
 const embed = new client.vembed();
-const { fact } = await neko.sfw.fact();
-console.log(fact);
-message.channel.send(fact);
+
+const { url }  = await neko.sfw.nekoGif();
+embed.setImage(url);
+message.channel.send(embed);
 }
 
-fact();
+negif();
 
 }

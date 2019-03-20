@@ -13,13 +13,7 @@ const { body: { url } } = await snekfetch.get(nekoAPI + endpoint);
 embed.setImage(url);
 message.channel.send(embed);
 }
-  
-try {
-  cats();
-}
-catch(error) {
-  console.error(error);
-}
 
+cats();
 
 }

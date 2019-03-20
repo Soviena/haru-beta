@@ -1,4 +1,3 @@
-/*
 exports.run = (client, message) => {
 const cat = require('nekos.life');
 const neko = new cat();
@@ -22,4 +21,3 @@ message.channel.send(embed);
 kitsune();
 
 }
-*/

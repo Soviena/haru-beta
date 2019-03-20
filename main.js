@@ -13,6 +13,8 @@ const GOOGLE_API_KEY = config.GOOGLE_API_KEY;
 const youtube = new YouTube(GOOGLE_API_KEY);
 const queue = new Map();
 
+const db = require('quick.db');
+
 // structure
 
 const vembed = require("./structure/vembed.js");
@@ -22,6 +24,7 @@ client.config = config;
 client.vembed = vembed;
 client.youtube = youtube;
 client.queue = queue;
+client.db = db
 
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);

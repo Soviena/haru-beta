@@ -1,12 +1,15 @@
 exports.run = (client, message, args) => {
-  const db = require('quick.db');
-  
+  const db = client.db  
   if(message.author.id !== client.config.ownerID) {
   message.reply("Kamu Bukan Master Ku!");
   return;
   }
   
-  if db.has()
+  var id = message.author.id;
+  if db.has(`${id}.test` === false){
+  var testdata = new db.table('data');
+  testdata.
+  }
   var server = 
   
   //var ch = args[0].slice(2, -1);

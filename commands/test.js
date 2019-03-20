@@ -1,7 +1,6 @@
 exports.run = (client, message, args) => {
     
-    const welcomeChannel = client.channels.get("id", "")
-    welcomeChannel.sendMessage("Welcome\n"+member.user.username);
+    client.channels.get('551536245987672100').send('dikirim dari channel bot')
     
   
 

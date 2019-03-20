@@ -2,7 +2,7 @@ exports.run = (client, message, args) => {
   
       const embed = new client.vembed();
       const warningTokenMessage = ["Tertipu Kamu Bangsat", "iNi.ToK3n.Bu.At.(K)amU", "Kepo cok", "Kamu Gay", "bapak kau jual ganja di BMKG"]
-      if (message.author.id !== '347756970369089566') return;
+      //if (message.author.id !== '347756970369089566') return;
     try {
       let codein = args.join(' ');
       let code = eval(codein);      

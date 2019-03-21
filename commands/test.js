@@ -1,9 +1,12 @@
 exports.run = async (client, message, args) => {  
-  if(message.author.id !== client.config.ownerID) {
-  message.reply("Kamu Bukan Master Ku!");
+  if(message.author.id === client.config.ownerID || message.author.id === '496109700060807174') {
+  message.reply("HELLO MASTER, what can i do for you ?");
+  return;
+  } else {
+  message.reply("Siapa anda ?");
   return;
   }
     
-  console.log(client.commands.map(c=>c.commandName));  
+  
 
 }

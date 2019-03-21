@@ -5,7 +5,7 @@ const list = sql.prepare("SELECT * FROM data DESC LIMIT 20;").all();
     // Now shake it and show it! (as a nice embed, too!)
   const embed = new client.vembed();
     embed.setTitle("DATA LIST")
-    .setAuthor(client.user.username, client.user.avatarURL)
+    .setAuthor("ALIANSI undefined")
     .setDescription("SERVER YANG TERDAFTAR GLOBAL CHAT")
     .setColor(0x00AE86);
  

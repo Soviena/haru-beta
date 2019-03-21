@@ -15,7 +15,7 @@ exports.run = async (client, message, args) => {
   
     const joinServer = moment(member.joinedAt).format('llll');
     const embed = new client.vembed();
-    embed.setTitle(`${member.user.username}'s Profile info.`)
+    embed.setAuthor(`${member.user.username}'s Profile info.`, member.user.avatarURL);
     embed.addField('Bergabung dengan server pada:', `${moment.utc(member.joinedAt).format('dddd, MMMM Do YYYY, HH:mm:ss')} \n (${diffDays}) hari yang lalu`, true);
     message.channel.send(embed);
     

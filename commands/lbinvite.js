@@ -12,11 +12,13 @@ exports.run = async (client, message) => {
   let possibleinvites = [];
   let index = 0;
   invites.forEach(function(invites) {
+    if(invites.uses !== 0){
     possibleinvites.push(`**${++index}**. 🔸 **${invites.inviter.tag}** 》 \`${invites.uses}\` **invites**`)
+    }
     })
 
   const embed = new client.vembed()
-    .setTitle(`🏆 INVITE LEADERBOARD 🏆`)
+    .setTitle(`🏆 WEEKLY INVITE LEADERBOARD 🏆`)
     .setColor('RANDOM')
     .setDescription(`${possibleinvites.join('\n')}`)
     .setTimestamp();

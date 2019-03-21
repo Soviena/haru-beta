@@ -19,9 +19,9 @@ exports.run = (client, message, args) => {
     const joinServer = moment(member.joinedAt).format('llll');
     const embed = new client.vembed();
     if(message.guild.members.get(member.user.id).nickname !== null){
-    embed.setAuthor(`${member.user.username}#${member.user.discriminator} ~ ${message.guild.members.get(member.user.id).nickname}`);
+    embed.setAuthor(`${member.user.username}#${member.user.discriminator} ~ ${message.guild.members.get(member.user.id).nickname}`,member.user.avatarURL);
     } else {
-    embed.setAuthor(`${member.user.username}#${member.user.discriminator}`);
+    embed.setAuthor(`${member.user.username}#${member.user.discriminator}`, member.user.avatarURL);
     }
     embed.setThumbnail(member.user.avatarURL);
     embed.addField('Lahir di Discord pada : ', `${moment.utc(member.user.createdAt).format('dddd, Do MMMM YYYY')} \n (${diffDaysj}) hari yang lalu`, true);

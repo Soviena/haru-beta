@@ -18,7 +18,11 @@ exports.run = async (client, message, args) => {
   
     const joinServer = moment(member.joinedAt).format('llll');
     const embed = new client.vembed();
+    if(message.guild.members.get(member.user.id).nickname !== null){
     embed.setAuthor(`${member.user.username}#${member.user.discriminator} ~ ${message.guild.members.get(member.user.id).nickname}`);
+    } else {
+    embed.setAuthor(`${member.user.username}#${member.user.discriminator}`);
+    }
     embed.setThumbnail(member.user.avatarURL);
     embed.addField('Membuat akun discord pada : ', `${moment.utc(member.user.createdAt).format('dddd, Do MMMM YYYY')} \n (${diffDaysj}) hari yang lalu`, true);
     embed.addField('Bergabung dengan server pada:', `${moment.utc(member.joinedAt).format('dddd,Do MMMM YYYY')} \n (${diffDays}) hari yang lalu`, true);

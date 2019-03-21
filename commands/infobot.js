@@ -14,7 +14,7 @@ exports.run = (client, message) => {
   embed.addField('Versi Bot : ', 'v2.0');
   embed.addField('Aktif di : ' , `${client.guilds.size} server`);
   embed.addField('Melayani : ', `${client.users.size} member`);
-  embed.addField(`Aktif sejak 
+  embed.addField(`Aktif sejak :` , `${hours} jam, ${minutes} menit yang lalu`);
   embed.setColor(0x5effd9);
   message.channel.send(embed);
 }

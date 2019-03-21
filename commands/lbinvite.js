@@ -1,9 +1,4 @@
-exports.run = async (client, message, args) => {  
-  if(message.author.id !== client.config.ownerID) {
-  message.reply("Kamu Bukan Master Ku!");
-  return;
-  }
-    
+exports.run = async (client, message) => {      
   const arraySort = require('array-sort');
 
   let invites = await message.guild.fetchInvites().catch(error => { 

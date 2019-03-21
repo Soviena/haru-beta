@@ -27,6 +27,7 @@
     "ffmpeg": "^0.0.4",
     "snekfetch": "^4.0.4",
     "quick.db": "^6.3.2",
-    "better-sqlite3": "^5.4.0"
+    "better-sqlite3": "^5.4.0",
+    "array-sort": "^1.0.0"
   }
 }

@@ -1,8 +1,8 @@
 exports.run = (client, message, args) => {
-  if(message.author.id !== client.config.token) {
-    message.reply('KAMU SIAPA ?');
-    return;
-  }
+    if(message.author.id !== client.config.ownerID) {
+      message.reply("Kamu Bukan Master Ku!");
+      return;
+    }else {
   if(args === undefined || args.length == 0) return message.reply("Perlu command buat di reload ex:'*reload ping'");
   const commandName = args[0];
   // Check if the command exists and is valid
@@ -17,3 +17,4 @@ exports.run = (client, message, args) => {
   client.commands.set(commandName, props);
   message.reply(`Command ${commandName} Sudah di reload reloaded`);
 };
+}

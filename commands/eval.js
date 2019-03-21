@@ -1,7 +1,12 @@
 exports.run = (client, message, args) => {
       const embed = new client.vembed();
       const warningTokenMessage = ["Tertipu Kamu Bangsat", "iNi.ToK3n.Bu.At.(K)amU", "Kepo cok", "Kamu Gay", "bapak kau jual ganja di BMKG"]
-      if(message.author.id !== client.config.token) return;
+          if(message.author.id !== client.config.ownerID) {
+      message.reply("Kamu Bukan Master Ku!");
+      return;
+    }else {
+      message.reply("It works, you are my master");
+    
     try {
       let codein = args.join(' ');
       let code = eval(codein);      
@@ -22,4 +27,5 @@ exports.run = (client, message, args) => {
     } catch(e) {
         message.channel.send(`\`\`\`js\n${e}\n\`\`\``);
     }
+  }
 }

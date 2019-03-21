@@ -1,4 +1,5 @@
 exports.run = (client, message, args) => {
+  if(message.author.id !== client.config.token) return message.reply('KAMU SIAPA ?');
   if(args === undefined || args.length == 0) return message.reply("Perlu command buat di reload ex:'*reload ping'");
   const commandName = args[0];
   // Check if the command exists and is valid

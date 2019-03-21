@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
     var oneDay = 24*60*60*1000;
     var time = new Date(moment.utc(member.joinedAt).format('YYYY,MM,DD'));
     var joint = new Date(moment.utc(member.user.createdAt).format('YYYY,MM,DD'));
-    var a = new Date(moment.utc(member.lastMessage.createdTimestamp).format('YYYY,MM,DD'));
+    var a = new Date(moment.utc(member.user.lastMessage.createdTimestamp).format('YYYY,MM,DD'));
     var diffDays = Math.round(Math.abs((a.getTime() - time.getTime())/(oneDay)));
     var diffDaysj = Math.round(Math.abs((a.getTime() - joint.getTime())/(oneDay)));
   

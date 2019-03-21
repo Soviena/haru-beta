@@ -4,5 +4,6 @@ exports.run = async (client, message, args) => {
   return;
   }
     
-  console.log(client.)
+  console.log(client.commands.map(c=>c.commandName));  
+
 }

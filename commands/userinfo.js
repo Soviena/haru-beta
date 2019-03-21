@@ -24,7 +24,7 @@ exports.run = (client, message, args) => {
     embed.setAuthor(`${member.user.username}#${member.user.discriminator}`);
     }
     embed.setThumbnail(member.user.avatarURL);
-    embed.addField('Lahir di Discord discord pada : ', `${moment.utc(member.user.createdAt).format('dddd, Do MMMM YYYY')} \n (${diffDaysj}) hari yang lalu`, true);
+    embed.addField('Lahir di Discord pada : ', `${moment.utc(member.user.createdAt).format('dddd, Do MMMM YYYY')} \n (${diffDaysj}) hari yang lalu`, true);
     embed.addField('Bergabung dengan server pada:', `${moment.utc(member.joinedAt).format('dddd,Do MMMM YYYY')} \n (${diffDays}) hari yang lalu`, true);
     message.channel.send(embed);
     

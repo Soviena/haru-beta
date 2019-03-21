@@ -4,30 +4,8 @@ exports.run = (client, message, args) => {
     const embednsfw = new client.vembed();
     const embedmsc = new client.vembed();
 
-    embedhelp.setAuthor("List Command");
-    embedhelp.addField("*avatar [mention] ","dapatkan profil Pic seseorang / dirimu sendiri");
-    embedhelp.addField("*baka ","kirim GIF baka!");
-    embedhelp.addField("*chat {teks} ","chatting dengan bot");
-    embedhelp.addField("*cuddle [mention] ","Peluk dengan mesra dan penuh cinta ");
-    embedhelp.addField("*fact ","dapatkan RandomFact");
-    embedhelp.addField("*help ","perintah yang digunakan saat ini");
-    embedhelp.addField("*hug [mention] ","peluk seseorang");
-    embedhelp.addField("*info ","Menampilkan Info server ini");
-    embedhelp.addField("*jam ","Menampilkan waktu setempat");
-    embedhelp.addField("*kiss [mention] ","Mencium seseorang");
-    embedhelp.addField("*kitsune ","dapatkan gambar FoxGirl");
-    embedhelp.addField("*master ","try it");
-    embedhelp.addField("*meow ","tampilkan gambar kucing (asli)");
-    embedhelp.addField("*mimi ","tampilkan ilustrasi furry (demihuman)");
-    embedhelp.addField("*neko ","gambar kucing lucu");
-    embedhelp.addField("*nekogif ","kucing lucu v2");
-    embedhelp.addField("*owo {teks} ","ubah teks mu menjadi lebih kawaii");
-    embedhelp.addField("*pat [mention] ","elus kepala seseorang");
-    embedhelp.addField("*ping ","cek latensi bot ke server");
-    embedhelp.addField("*poke [mention] ","colek seseorang");
-    embedhelp.addField("*slap [mention] ","tampar seseorang");
-    embedhelp.addField("*smug ","get smug bro");
-    embedhelp.addField("*why ","kamu tanya kenapa ?");
+    embedhelp.setAuthor("List Command")
+    .setDescription("avatar , eval , glist , gset , gremove , info , infobot , jam , lbinvite , ping , userinfo");
 
     embedadm.setAuthor("List Command Admin");
     embedadm.addField("*prune {banyak_pesan} ","hapus 1 - 99 pesan");

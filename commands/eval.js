@@ -4,10 +4,9 @@ exports.run = (client, message, args) => {
           if(message.author.id !== client.config.ownerID) {
       message.reply("Kamu Bukan Master Ku!");
       return;
-    }else {
-      message.reply("It works, you are my master");
-    
+    }else {    
     try {
+      if(args === undefined || args.length == 0) return message.reply("Perlu Syntax cth:'message.author.id'");
       let codein = args.join(' ');
       let code = eval(codein);      
       if (!codein) return;

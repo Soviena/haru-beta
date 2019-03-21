@@ -5,12 +5,14 @@ exports.run = (client, message, args) => {
     const embedmsc = new client.vembed();
 
     embedhelp.setAuthor("List Command")
-    .setDescription("avatar , eval , glist , gset , gremove , info , infobot , jam , lbinvite , ping , userinfo");
+    .setDescription("avatar , eval , glist , gset , gremove , info , infobot , jam , lbinvite , ping , userinfo")
+    .addField('FUN IMAGE', 'baka , cuddle , hug , kiss , kitsune , meow , mimi , neko , nekogif , pat , poke , pout , slap , smug')
+    .addField('FUN TEXT', 'chat [teks] , fact , kill , owo [teks] , why');
 
     embedadm.setAuthor("List Command Admin");
     embedadm.addField("*prune {banyak_pesan} ","hapus 1 - 99 pesan");
-    embedadm.addField("*reload {command} ","muat ulang command");
-    embedadm.addField("dan masih ditambahkan yang lain");
+    embedadm.addField("*reload {command} ","muat ulang command")
+    .addField("*eval [syntax]", "Run syntax");
 
     embednsfw.setAuthor("List Command NSFW");
     embednsfw.addField("*neko ","lewd neko");
@@ -24,7 +26,8 @@ exports.run = (client, message, args) => {
     embedmsc.addField("*np ","now playing");
     embedmsc.addField("*play [judul_lagu] ","putar lagu");
     embedmsc.addField("*skip ","lewati lagu");
-    embedmsc.addField("*stop ","Hentikan lagu");
+    embedmsc.addField("*stop ","Hentikan lagu")
+    .addField("*queue", "Daftar Lagu");
 
     message.channel.send(embedhelp);
     message.channel.send(embedmsc);

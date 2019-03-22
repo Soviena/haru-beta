@@ -7,6 +7,10 @@ exports.run = (client, message, args) => {
     if (!data) { 
     if(args === null || args === undefined || args.length == 0) return message.reply('perlu nama channel cth : *gset #general');
     var channel = args[0].slice(2, -1); 
+    if(isNaN(channel)){
+      message.reply("Format penulisan nama channel salah!");
+      return;
+    }
     data = {
       id: `${server}`,
       guild: server,

@@ -33,6 +33,6 @@ module.exports = {
   "url31": 'https://i.redd.it/o358kfgbtei21.jpg',
   "url32": 'https://archive-media-0.nyafuu.org/c/image/1513/18/1513182310920.jpg',
   "url33": 'https://media1.tenor.com/images/c8bf65854104f13e8e2cdc9453c5222f/tenor.gif?itemid=8687045',
-  "url34":
+  "url34": 'https://media.discordapp.net/attachments/514305658846183434/559274236741681182/IMG_20190324_161445.jpg?width=1249&height=703'
 
 }

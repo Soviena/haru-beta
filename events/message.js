@@ -33,7 +33,32 @@ module.exports = (client, message) => {
       }  
     }  
   }
-// ---------  
+// --------- 
+  
+    // Read F only
+  if(message.content === 'F'){
+    const db = client.sql;
+    var userid = client.getUser.get(message.author.id);
+    if (!userid) { 
+    data = {
+      id: `${message.author.id}`,
+      user: message.author.id,
+      guild: message.guild.id,
+      Respect: 0
+    }
+    client.setUser.run(data);  
+    
+    let user = client.getUser.get(message.author.id);
+    user.Respect++;
+    client.setUser.run(user);
+    } else {
+    userid.Respect++;
+    client.setUser.run(userid);
+    };
+    //message.reply('Works as it is')
+  }
+  
+  
 
   // Ignore messages not starting with the prefix (in config.json)
   if (message.content.indexOf(client.config.prefix) !== 0) return;

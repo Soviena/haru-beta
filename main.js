@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const talkedRecently = new Set();
 const { Client, Util } = require('discord.js');
 const Enmap = require("enmap");
 const fs = require("fs");
@@ -28,6 +29,7 @@ client.youtube = youtube;
 client.queue = queue;
 client.sql = sql;
 client.serv = serv;
+client.talkedRecently = talkedRecently;
 
 client.getUser = sql.prepare("SELECT * FROM Rp WHERE user = ? AND guild = ?");
 client.setUser = sql.prepare("INSERT OR REPLACE INTO Rp (id, user, guild, Respect) VALUES (@id, @user, @guild, @Respect);");

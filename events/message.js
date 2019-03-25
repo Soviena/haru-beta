@@ -37,6 +37,9 @@ module.exports = (client, message) => {
   
     // Read F only
   if(message.content === 'F'){
+    if(client.talkedRecently.has(message.author.id)) {
+      return;
+    } else {
     const db = client.sql;
     var userid = client.getUser.get(message.author.id, message.guild.id);
     if (!userid) { 
@@ -55,7 +58,15 @@ module.exports = (client, message) => {
     userid.Respect++;
     client.setUser.run(userid);
     };
+      
+    client.talkedRecently.add(message.author.id);
+    setTimeout(() => {
+    // Removes the user from the set after a minute
+    client.talkedRecently.delete(message.author.id);
+    }, 60000);    
     //message.reply('Works as it is')
+      
+    }
   }
   
   

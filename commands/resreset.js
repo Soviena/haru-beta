@@ -1,15 +1,11 @@
 exports.run = (client, message, args) => {  
-  
-  const db = client.sql;
-  
-  let user = client.getUser.get(message.author.id, message.guild.id);
-  console.log(user);
-  if (!user) { 
-    message.reply('Respect point user nya emang udah 0');
-  } else {
-    db.prepare(`DELETE FROM Rp WHERE id = "${message.guild.id}-${message.author.id}"`).run();
-    message.reply('Respect point user telah di reset ke 0');  
-  }
-  
-  
+    if(message.author.id !== client.config.ownerID) {
+      message.reply("Kamu Bukan Master Ku!");
+      return;
+    }else {    
+    const db = client.sql;    
+    db.prepare(`DELETE FROM Rp WHERE guild = '${message.guild.id}'`).run();
+    message.reply('Respect point Semua user telah di reset ke 0');  
+    }
+
 }

@@ -29,8 +29,8 @@ client.queue = queue;
 client.sql = sql;
 client.serv = serv;
 
-//client.getUser = sql.prepare("SELECT * FROM Rp WHERE id = ?");
-//client.setUser = sql.prepare("INSERT OR REPLACE INTO Rp (id, user, guild, Respect) VALUES (@id, @user, @guild, @Respect);");
+client.getUser = sql.prepare("SELECT * FROM Rp WHERE user = ? AND guild = ?");
+client.setUser = sql.prepare("INSERT OR REPLACE INTO Rp (id, user, guild, Respect) VALUES (@id, @user, @guild, @Respect);");
 
 client.getData = serv.prepare("SELECT * FROM data WHERE id = ?");
 client.setData = serv.prepare("INSERT OR REPLACE INTO data (id, guild, channel) VALUES (@id, @guild, @channel);");

@@ -38,17 +38,17 @@ module.exports = (client, message) => {
     // Read F only
   if(message.content === 'F'){
     const db = client.sql;
-    var userid = client.getUser.get(message.author.id);
+    var userid = client.getUser.get(message.author.id, message.guild.id);
     if (!userid) { 
     data = {
-      id: `${message.author.id}`,
+      id: `${message.guild.id}-${message.author.id}`,
       user: message.author.id,
       guild: message.guild.id,
       Respect: 0
     }
     client.setUser.run(data);  
     
-    let user = client.getUser.get(message.author.id);
+    let user = client.getUser.get(message.author.id, message.guild.id);
     user.Respect++;
     client.setUser.run(user);
     } else {

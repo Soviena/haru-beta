@@ -1,11 +1,11 @@
 exports.run = async (client, message) => {
   const db = client.sql;
   
-    let data = client.getUser.get(message.author.id);
+    let data = client.getUser.get(message.author.id, message.guild.id);
   
     if (!data) { 
     data = {
-      id: `${message.author.id}`,
+      id: `${message.guild.id}-${message.author.id}`,
       user: message.author.id,
       guild: message.guild.id,
       Respect: 0

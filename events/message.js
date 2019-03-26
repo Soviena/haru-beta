@@ -63,7 +63,7 @@ module.exports = (client, message) => {
     setTimeout(() => {
     // Removes the user from the set after a minute
     client.talkedRecently.delete(message.author.id);
-    }, 60000);    
+    }, 15000);    
     //message.reply('Works as it is')
       
     }

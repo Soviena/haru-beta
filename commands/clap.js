@@ -1,13 +1,13 @@
 exports.run = (client, message) => {
 
     const embed = new client.vembed();
-    var pout = require('../data/pout'),
-    poutkeyarr = Object.keys(pout),
-    urlindex = Math.floor(Math.random() * poutkeyarr.length),
-    rpout = pout[poutkeyarr[urlindex]];
+    var clap = require('../data/clap'),
+    clapkeyarr = Object.keys(clap),
+    urlindex = Math.floor(Math.random() * clapkeyarr.length),
+    rclap = clap[clapkeyarr[urlindex]];
 
-    embed.setImage(rpout);
-    embed.setDescription(`<@${message.author.id}> Pouted`);
+    embed.setImage(rclap);
+    embed.setDescription(`<@${message.author.id}> Bertepuk tengan`);
     message.channel.send(embed);    
 
 }

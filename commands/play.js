@@ -30,7 +30,7 @@ exports.run = async (client, message, args) => {
         let index = 0;
         
         
-        /**
+
         message.channel.send(`
 __**Pilih Lagu:**__
 
@@ -38,7 +38,7 @@ ${videos.map(video2 => `**${++index} -** ${video2.title}`).join('\n')}
 
 Balas pesan ini dengan pilih dari no 1 - 10..
         `);
-        **/
+
         // eslint-disable-next-line max-depth
         try {
           var response = await message.channel.awaitMessages(message2 => message2.content > 0 && message2.content < 11, {

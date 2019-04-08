@@ -26,6 +26,7 @@ exports.run = (client, message, args) => {
     embed.setImage(url);    
     message.channel.send(embed);
     }
+    message.channel.send(`TOBAT EI $<@message.author.id>}`);
     }
     
     rnh();

@@ -1,4 +1,4 @@
-exports.run = async (client, message, args) => {
+Tapiexports.run = async (client, message, args) => {
     var member = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(member === undefined || member === null){
         const avatar = message.author.id

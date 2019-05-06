@@ -7,7 +7,7 @@ exports.run = (client, message) => {
     rclap = clap[clapkeyarr[urlindex]];
 
     embed.setImage(rclap);
-    embed.setDescription(`<@${message.author.id}> Bertepuk tengan`);
+    embed.setDescription(`<@${message.author.id}> Bertepuk tangan`);
     message.channel.send(embed);    
 
 }

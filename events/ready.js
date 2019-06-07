@@ -7,7 +7,7 @@ module.exports = (client) => {
   function changing_status() {
     let status = [`bersama ${client.users.size} penonton`, `memiliki ${client.channels.size} cabang`, `${moment().utcOffset('+0700').format("HH:mm A")} WIB`,
     `${moment().utcOffset('+0800').format("HH:mm A")} WITA`, 
-    `${moment().utcOffset('+0900').format("HH:mm A")} WIT`,`berada di ${client.guilds.size} server`, `Waktu Imsak +- 4:50 (WITA)`,`Maghrib +- 6:20 (WITA)`]
+    `${moment().utcOffset('+0900').format("HH:mm A")} WIT`,`berada di ${client.guilds.size} server`]
 
     let random = status[Math.floor(Math.random() * status.length)]
     client.user.setActivity(random , { type: 'STREAMING', url: `https://www.twitch.tv/vizsher`});

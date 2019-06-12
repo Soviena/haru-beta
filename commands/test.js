@@ -1,7 +1,7 @@
 exports.run = (client, message, args) => {
 const sql = client.serv;
 const list = sql.prepare("SELECT * FROM data DESC LIMIT 20;").all();
- 
+const id =
     // Now shake it and show it! (as a nice embed, too!)
   const embed = new client.vembed();
     embed.setTitle("DATA LIST")
@@ -9,9 +9,7 @@ const list = sql.prepare("SELECT * FROM data DESC LIMIT 20;").all();
     .setDescription("SERVER YANG TERDAFTAR GLOBAL CHAT")
     .setColor(0x00AE86);
  
-  for(const data of list) {
-    embed.addField(`${client.guilds.get(data.id).name}`, `--> ${client.guilds.get(data.id).channels.get(data.channel).name}`);
-  }
+    embed.addField(`${client.guilds.get('452594679213588482').name}`);
   message.channel.send({embed});
   
 }

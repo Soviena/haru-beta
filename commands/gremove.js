@@ -10,3 +10,4 @@ const sql = client.serv;
     message.reply('Integrasi GLOBAL CHAT telah di hapus');  
     }
 }
+

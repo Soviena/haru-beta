@@ -1,9 +1,18 @@
 exports.run = (client, message, args) => {
 const sql = client.serv;
 const list = sql.prepare("SELECT * FROM data DESC LIMIT 20;").all();
-const id =  297540702315741194;
-sql.prepare(`DELETE FROM data WHERE id = ${id}`).run();
-  message.channel.send("")
-  
+ 
+    // Now shake it and show it! (as a nice embed, too!)
+  const embed = new client.vembed();
+    embed.setTitle("DATA LIST")
+    .setAuthor("ALIANSI undefined")
+    .setDescription("SERVER YANG TERDAFTAR GLOBAL CHAT")
+    .setColor(0x00AE86);
+ 
+  for(const data of list) {
+    embed.addField(data.id);
+    //embed.addField(`${client.guilds.get(data.id).name}`, `--> ${client.guilds.get(data.id).channels.get(data.channel).name}`);
+  }
+  message.channel.send({embed});
   
 }

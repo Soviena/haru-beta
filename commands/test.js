@@ -18,8 +18,8 @@ exports.run = (client, message, args) => {
     .setTimestamp();
     for(const data of list) {
       if(data.id !== message.guild.id) {
-         console.log();
-      client.guilds.get("'"+data.id+"'").channels.get("'"+data.channel"'"').send(embed);
+         console.log(client.guilds.get("'"+data.id+"'").name);
+      client.guilds.get("'"+data.id+"'").channels.get("'"+data.channel+"'").send(embed);
       }  
     }  
   

@@ -1,15 +1,26 @@
+    
 exports.run = (client, message, args) => {
-const sql = client.serv;
-const list = sql.prepare("SELECT * FROM data DESC LIMIT 20;").all();
-const id =
+    if(message.author.id !== client.config.ownerID) {
+    message.reply("Kamu Bukan Master Ku!");
+    return;
+    }
+    const sql = client.serv;
+    const list = sql.prepare("SELECT * FROM data DESC LIMIT 20;").all();
+     
+    var txt = args.join(' ');
+    
     // Now shake it and show it! (as a nice embed, too!)
-  const embed = new client.vembed();
-    embed.setTitle("DATA LIST")
-    .setAuthor("ALIANSI undefined")
-    .setDescription("SERVER YANG TERDAFTAR GLOBAL CHAT")
-    .setColor(0x00AE86);
- 
-    embed.addField(`${client.guilds.get('452594679213588482').name}`);
-  message.channel.send({embed});
+    const embed = new client.vembed();
+    embed.setAuthor(message.guild.name, message.guild.iconURL)
+    .setDescription(`${txt}`)
+    .setColor('RANDOM')
+    .setFooter(`${message.author.username}#${message.author.discriminator} `, message.author.avatarURL)
+    .setTimestamp();
+    for(const data of list) {
+      if(data.id !== message.guild.id) {
+         console.log();
+      client.guilds.get("'"+data.id+"'").channels.get("'"+data.channel"'"').send(embed);
+      }  
+    }  
   
 }

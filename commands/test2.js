@@ -5,7 +5,6 @@ exports.run = (client, message, args) => {
       return;
     }else {   
   
-    client.guilds.get('588601572171186178').delete;
-    message.channel.send('TERHAPUS *ketawa jahat*')
+    message.channel.send(message.guild.iconURL);
     }
 }

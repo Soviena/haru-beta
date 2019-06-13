@@ -29,7 +29,9 @@ module.exports = (client, message) => {
  
     for(const data of list) {
       if(data.id !== message.guild.id) {
-      client.guilds.get(data.id).channels.get(data.channel).send(embed);
+        if(client.guilds.get(data.id) !== undefined){
+          client.guilds.get(data.id).channels.get(data.channel).send(embed);
+        } else {}
       }  
     }  
   }

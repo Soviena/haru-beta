@@ -1,5 +1,10 @@
 exports.run = (client, message, args) => { 
   
+        if(message.author.id !== client.config.ownerID) {
+      message.reply("Kamu Bukan Master Ku!");
+      return;
+    }else {   
+  
     const embed = new client.vembed();
     var id = args;
     console.log(id);
@@ -10,5 +15,5 @@ exports.run = (client, message, args) => {
     .setImage(url)
     .setColor('RANDOM');
     message.channel.send(embed);
-  
+    }
 }

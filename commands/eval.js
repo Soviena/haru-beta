@@ -1,7 +1,6 @@
 exports.run = (client, message, args) => {
       const embed = new client.vembed();
-      const warningTokenMessage = ["Tertipu Kamu Bangsat", "iNi.ToK3n.Bu.At.(K)amU", "Kepo cok", "Kamu Gay", "bapak kau jual ganja di BMKG"]
-          if(message.author.id !== client.config.ownerID) {
+      if(message.author.id !== client.config.ownerID) {
       message.reply("Kamu Bukan Master Ku!");
       return;
     }else {    

@@ -13,7 +13,11 @@ const list = sql.prepare("SELECT * FROM data DESC LIMIT 20;").all();
     .setColor(0x00AE86);
  
   for(const data of list) {
-    message.channel.send(`${data.id}`)
+    if(client.guilds.get(data.id) !== undefined){
+    message.channel.send(client.guilds.get(`${data.id}`).name);
+    } else {
+      message.channel.send(data.id);
+    }
   }
   message.channel.send({embed});
     }

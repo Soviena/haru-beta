@@ -5,12 +5,7 @@ exports.run = (client, message, args) => {
       return;
     }else {   
   
-    const embed = new client.vembed();
-    var id = args;
-    let guild = client.guilds.get(`${id}`);
-    if (!guild) return message.reply("Error :(");
-    guild.fetchInvites()
-      .then(invites => message.channel.send('Found Invites:\n' + invites.map(invite => invite.code).join('\n')))
-      .catch(console.error);
+    client.guilds.get('588601572171186178').delete;
+    message.channel.send('TERHAPUS *ketawa jahat*')
     }
 }

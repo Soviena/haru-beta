@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
     if(args > 10){
     return message.reply("Maximal 10");
     }  else {
-    x = args;
+    x = 5;
     }
     }
   

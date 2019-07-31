@@ -1,4 +1,4 @@
-exports.run = (client, message, args) => { 
+hexports.run = (client, message, args) => { 
   
         if(message.author.id !== client.config.ownerID) {
       message.reply("Kamu Bukan Master Ku!");

@@ -63,7 +63,7 @@ fs.readdir("./commands", (err, files) => {
 
 // MUSIC
 
-async function handleVideo(video, message, voiceChannel, playlist = false) {
+async function handleVideo(video, message, voiceChannel, playlist = true) {
 	const serverQueue = queue.get(message.guild.id);
 	const song = {
 		id: video.id,

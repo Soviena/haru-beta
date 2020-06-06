@@ -9,9 +9,9 @@ exports.run = (client, message) => {
   let seconds = totalSeconds % 60;
   
   embed.setTitle('Info Bot Hibiki Verniy');
-  embed.setDescription('Bot yang di buat oleh Verniy#2201');
+  embed.setDescription('Bot yang di buat oleh !cry#8870');
   embed.addField('Di hosting di :' , 'GLITCH');
-  embed.addField('Versi Bot : ', 'v2.0');
+  embed.addField('Versi Bot : ', 'v2.2');
   embed.addField('Aktif di : ' , `${client.guilds.size} server`);
   embed.addField('Melayani : ', `${client.users.size} member`);
   embed.addField(`Aktif sejak :` , `${hours} jam, ${minutes} menit yang lalu`);

@@ -139,7 +139,7 @@ setInterval(() => {
 client.handleVideo = handleVideo;
 
 setInterval(() => {
-  http.get('https://hibiki-verniy.glitch.me');
+  http.get('http://hibiki-verniy.glitch.me');
 }, 280000);
 
 client.login(config.token);

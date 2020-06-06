@@ -1,4 +1,6 @@
 exports.run = (client, message) => {
+    const description = `${message.guild.roles.array().slice(1).sort((a, b) => a.comparePositionTo(b)).reverse().map(roles => roles).join(' \n ')}`;
+    const split = description.match(/[\s\S]{1,2048}/g);
     const embed = new client.vembed()
     .setAuthor(`message.guild.id, message.guild.iconURL`)
     .setTitle(`🔒  Roles List [${message.guild.roles.size}]`)

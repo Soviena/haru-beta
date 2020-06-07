@@ -13,7 +13,9 @@ exports.run = (client, message) => {
     .addField(':regional_indicator_q: : Rainbow Six',":regional_indicator_r: : Pokemon GO")
     .addField(':regional_indicator_s: : Valorant',":regional_indicator_t: : Factorio")
     .setColor(0x00e4e8);
-    message.channel.send(embed);
+    message.channel.send(embed)
+    .then(() => client.user.lastMessage.react(':regional_indicator_a:'))
+    .catch(() => console.error('One of the emojis failed to react.'));
     /*
     message.channel.send("Tekan emoji")
     .then(() => client.user.lastMessage.react("586723200281608193"))

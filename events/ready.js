@@ -34,13 +34,23 @@ module.exports = (client) => {
   
   setInterval(changing_status, 5000);
 
+  let channel_id = "485436637665558531"; 
+  let message_id = "719164766320459776";
+
+  client.channels.get(channel_id).fetchMessage(message_id).then(m => {
+    console.log("Cached reaction message.");
+    }).catch(e => {
+    console.error("Error loading message.");
+    console.error(e);
+  });
 
   client.on("messageReactionAdd",(reaction,user)=>{
     if(!user) return;
     if(user.bot)return;
     if(!reaction.message.channel.guild) return;
     reaction.message.channel.send("U reacted");
-    if(reaction.emoji.id == ":ok1:586723200281608193" && reaction.message.id === '719157122088173599') 
+    console.log(reaction.message.id);
+    if(reaction.emoji.id == "586723200281608193" && reaction.message.id === message_id) 
     {
         reaction.message.channel.send("U reacted OK1");
         /*
@@ -57,7 +67,7 @@ module.exports = (client) => {
             });
         */
     }
-    if(reaction.emoji.id == ":ok2:586723106039529472" && reaction.message.id === '719157122088173599') 
+    if(reaction.emoji.id == "586723106039529472" && reaction.message.id === message_id) 
     {
       reaction.message.channel.send("U reacted OK2");
     }

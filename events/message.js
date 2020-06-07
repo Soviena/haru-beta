@@ -71,6 +71,22 @@ module.exports = (client, message) => {
     }
   }
   
+  //----- Read Reaction
+  client.on("messageReactionAdd",(reaction,user)=>{
+  if(!user) return;
+  if(user.bot)return;
+  if(!reaction.message.channel.guild) return;
+  
+});
+
+
+client.on("messageReactionRemove",(reaction,user)=>{
+  if(!user) return;
+  if(user.bot)return;
+  if(!reaction.message.channel.guild) return;
+  
+});
+  
   
 
   // Ignore messages not starting with the prefix (in config.json)

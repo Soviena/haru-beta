@@ -72,21 +72,37 @@ module.exports = (client, message) => {
   }
   
   //----- Read Reaction
-  client.on("messageReactionAdd",(reaction,user)=>{
-  if(!user) return;
-  if(user.bot)return;
-  if(!reaction.message.channel.guild) return;
-  console.log("Role selection clicked");
-});
+client.on("messageReactionAdd", (reaction, user) => {
+  if (user.bot) return;
+  const member = reaction.message.member
+   switch (reaction.name) {
+     case ":ok1":
+     //member.addRole("597011179545690121").then((res) => {
+       reaction.message.channel.send("u clicked ok1");
+     //}).catch(console.error);
+     break;
+     case "ok2":
+     //member.addRole("597011179545690121").then((res) => {
+       reaction.message.channel.send("u clicked ok2")
+     //}).catch(console.error);
+  };
+})
 
-
-client.on("messageReactionRemove",(reaction,user)=>{
-  if(!user) return;
-  if(user.bot)return;
-  if(!reaction.message.channel.guild) return;
-  console.log("Role selection unclicked");
-});
-  
+client.on("messageReactionRemove", (reaction, user) => {
+  if (user.bot) return;
+  const member = reaction.message.member
+  switch (reaction.name) {
+case "ok1":
+//member.removeRole("roleID").then((res) => 
+  reaction.message.channel.send("u removed ok1")
+    //}).catch(console.error);
+    break;
+    case "ok2":
+    //member.removeRole("someOtherRole").then((res) => {
+      reaction.message.channel.send("u removed ok2")
+    //}).catch(console.error);
+  };
+})
   
 
   // Ignore messages not starting with the prefix (in config.json)

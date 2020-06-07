@@ -33,5 +33,21 @@ module.exports = (client) => {
       }
   
   setInterval(changing_status, 5000);
+
+
+  client.on("messageReactionAdd",(reaction,user)=>{
+    if(!user) return;
+    if(user.bot)return;
+    if(!reaction.message.channel.guild) return;
+    console.log("Added")
+  });
+  
+  
+  client.on("messageReactionRemove",(reaction,user)=>{
+    if(!user) return;
+    if(user.bot)return;
+    if(!reaction.message.channel.guild) return;
+    console.log("Removed")
+  });
   
 }

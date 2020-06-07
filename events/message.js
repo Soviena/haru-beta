@@ -70,42 +70,6 @@ module.exports = (client, message) => {
       
     }
   }
-  
-  //----- Read Reaction
-client.on("messageReactionAdd", (reaction, user) => {
-  if (user.bot) return;
-  const member = reaction.message.member
-  console.log(client.user.lastMessage.reactions.name);
-   switch (reaction.name) {
-     case "586723200281608193":
-     //member.addRole("597011179545690121").then((res) => {
-       reaction.message.channel.send("u clicked ok1");
-     //}).catch(console.error);
-     break;
-     case "586723106039529472":
-     //member.addRole("597011179545690121").then((res) => {
-       reaction.message.channel.send("u clicked ok2")
-     //}).catch(console.error);
-  };
-})
-
-client.on("messageReactionRemove", (reaction, user) => {
-  if (user.bot) return;
-  const member = reaction.message.member
-  console.log(reaction.name);
-  switch (reaction.name) {
-    case "586723200281608193":
-//member.removeRole("roleID").then((res) => 
-  reaction.message.channel.send("u removed ok1")
-    //}).catch(console.error);
-    break;
-    case "586723106039529472":
-    //member.removeRole("someOtherRole").then((res) => {
-      reaction.message.channel.send("u removed ok2")
-    //}).catch(console.error);
-  };
-})
-  
 
   // Ignore messages not starting with the prefix (in config.json)
   if (message.content.indexOf(client.config.prefix) !== 0) return;

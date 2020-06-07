@@ -18,19 +18,18 @@ exports.run = (client, message, args) => {
         if (typeof code !== 'string')
 
             code = require('util').inspect(code, { depth: 0 });
-        embed.setAuthor('Evaluate')
-        embed.setColor('RANDOM')
-        embed.addField('📥 Input', `\`\`\`js\n${codein}\`\`\``)
-        embed.addField('📤 Output', `\`\`\`js\n${code}\n\`\`\``)
-        message.channel.send(embed)
+        //embed.setAuthor('Evaluate')
+        //embed.setColor('RANDOM')
+        //embed.addField('📥 Input', `\`\`\`js\n${codein}\`\`\``)
+        //embed.addField('📤 Output', `\`\`\`js\n${code}\n\`\`\``)
+        //message.channel.send(embed)
 
-        const description = `${message.guild.roles.array().slice(1).sort((a, b) => a.comparePositionTo(b)).reverse().map(roles => roles).join(' \n ')}`;
+        const description = `\`\`\`js\n${code}\n\`\`\``;
         const split = description.match(/[\s\S]{1,2048}/g);
         for (let i = 0; i < split.length; i++) {
           let embed = new client.vembed()
-        .setTitle('📥 Input', `\`\`\`js\n${codein}\`\`\``)
+        .setTitle(`\`\`\`js\n${codein}\`\`\``)
         .setDescription(split[i], true)
-        .setFooter(`Jumlah member : ${message.guild.members.filter(member => !member.user.bot).size} dengan ${message.guild.channels.size} channel `)
         .setColor(0xff38c0);
         message.channel.send(embed);
         }

@@ -76,7 +76,7 @@ module.exports = (client, message) => {
   if(!user) return;
   if(user.bot)return;
   if(!reaction.message.channel.guild) return;
-  
+  console.log("Role selection clicked");
 });
 
 
@@ -84,7 +84,7 @@ client.on("messageReactionRemove",(reaction,user)=>{
   if(!user) return;
   if(user.bot)return;
   if(!reaction.message.channel.guild) return;
-  
+  console.log("Role selection unclicked");
 });
   
   

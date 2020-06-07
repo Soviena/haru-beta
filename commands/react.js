@@ -1,6 +1,25 @@
 exports.run = (client, message) => {
     const embed = new client.vembed();
 
+
+    embed.setTitle(`Identity & Hobby`)
+    .addField(':green_circle: : Calm Green',":green_square: : Lime Green")
+    .addField(':yellow_circle: : Yelloww',":orange_circle: : Orangers")
+    .addField(':purple_circle: : Purplish Purple',":blue_circle: : Sky Blue")
+    .addField(':small_red_triangle: : Magenta',":red_circle: : Bloody Red")
+    .setColor(0x00e4e8);
+    message.channel.send(embed)
+    .then(() => client.user.lastMessage.react('🟢'))
+    .then(() => client.user.lastMessage.react('🟩'))
+    .then(() => client.user.lastMessage.react('🟡'))
+    .then(() => client.user.lastMessage.react('🟠'))
+    .then(() => client.user.lastMessage.react('🟣'))
+    .then(() => client.user.lastMessage.react('🔵'))
+    .then(() => client.user.lastMessage.react('🔺'))    
+    .then(() => client.user.lastMessage.react('🔴'))    
+    .catch(() => console.error('One of the emojis failed to react.'));
+
+/*
     embed.setTitle(`Identity & Hobby`)
     .addField(':computer: : Programmer',":camera: : Photographer")
     .addField(':pencil: : Editor',":straight_ruler: : Designer")
@@ -15,13 +34,11 @@ exports.run = (client, message) => {
     .then(() => client.user.lastMessage.react('📏'))
     .then(() => client.user.lastMessage.react('✏️'))
     .then(() => client.user.lastMessage.react('♨️'))
-    .then(() => client.user.lastMessage.react(':underage:'))
+    .then(() => client.user.lastMessage.react('🇯🇵'))    
+    .then(() => client.user.lastMessage.react('💮'))    
+    .then(() => client.user.lastMessage.react('🔞'))    
     .catch(() => console.error('One of the emojis failed to react.'));
 
-
-
-
-    /*
     embed.setTitle(`GAME ROLES`)
     .addField(':regional_indicator_a: : Apex Legend',":regional_indicator_b: : Black Dessert")
     .addField(':regional_indicator_c: : Brawlhalla',":regional_indicator_d: : The Forest")

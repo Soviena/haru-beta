@@ -3,12 +3,12 @@ exports.run = (client, message) => {
 
     embed.setTitle(`SELF ROLE`)
     .addField("Identity", ":flag_jp: : おたく")
-    .addField(' ',":regional_indicator_r: : R++")
-    .addField(' ',":regional_indicator_r: : R++")
-    .addField(' ',":regional_indicator_r: : R++")
-    .addField(' ',":regional_indicator_r: : R++")
-    .addField(' ',":regional_indicator_r: : R++")
-    .addField(' ',":regional_indicator_r: : R++")
+    .addField(':regional_indicator_r: : R++',":regional_indicator_r: : R++")
+    .addField(':regional_indicator_r: : R++',":regional_indicator_r: : R++")
+    .addField(':regional_indicator_r: : R++',":regional_indicator_r: : R++")
+    .addField(':regional_indicator_r: : R++',":regional_indicator_r: : R++")
+    .addField(':regional_indicator_r: : R++',":regional_indicator_r: : R++")
+    .addField(':regional_indicator_r: : R++',":regional_indicator_r: : R++")
     .addField(':regional_indicator_r: : R++',":regional_indicator_r: : R++")
     .addField(':regional_indicator_r: : R++',":regional_indicator_r: : R++")
     .setColor(0x00e4e8);

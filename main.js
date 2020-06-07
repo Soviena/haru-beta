@@ -61,6 +61,21 @@ fs.readdir("./commands", (err, files) => {
   });
 });
 
+client.on("messageReactionAdd",(reaction,user)=>{
+  if(!user) return;
+  if(user.bot)return;
+  if(!reaction.message.channel.guild) return;
+  message.channel.send("Added");
+});
+
+
+client.on("messageReactionRemove",(reaction,user)=>{
+  if(!user) return;
+  if(user.bot)return;
+  if(!reaction.message.channel.guild) return;
+  
+});
+
 // MUSIC
 
 async function handleVideo(video, message, voiceChannel, playlist = true) {

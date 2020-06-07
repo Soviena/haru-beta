@@ -1,9 +1,17 @@
 exports.run = (client, message) => {
     const embed = new client.vembed();
-    let embed = new client.vembed()
-    .setTitle(`SELF ROLE`)
-    .setDescription(":flag_jp: : Wibu")
-    .setColor(0xff38c0);
+
+    embed.setTitle(`SELF ROLE`)
+    .addField("Identity", ":flag_jp: : おたく")
+    .addField(' ',":regional_indicator_r: : R++")
+    .addField(' ',":regional_indicator_r: : R++")
+    .addField(' ',":regional_indicator_r: : R++")
+    .addField(' ',":regional_indicator_r: : R++")
+    .addField(' ',":regional_indicator_r: : R++")
+    .addField(' ',":regional_indicator_r: : R++")
+    .addField(':regional_indicator_r: : R++',":regional_indicator_r: : R++")
+    .addField(':regional_indicator_r: : R++',":regional_indicator_r: : R++")
+    .setColor(0x00e4e8);
     message.channel.send(embed);
     /*
     message.channel.send("Tekan emoji")

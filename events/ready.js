@@ -39,7 +39,29 @@ module.exports = (client) => {
     if(!user) return;
     if(user.bot)return;
     if(!reaction.message.channel.guild) return;
-    console.log("Added")
+    reaction.message.channel.send("U reacted");
+    if(reaction.emoji.id == ":ok1:586723200281608193" && reaction.message.id === '719157122088173599') 
+    {
+        reaction.message.channel.send("U reacted OK1");
+        /*
+        guild.fetchMember(user) // fetch the user that reacted
+            .then((member) => 
+            {
+                let role = (member.guild.roles.find(role => role.name === "YOUR ROLE NAME HERE"));
+                member.addRole(role)
+                .then(() => 
+                {
+                    console.log(`Added the role to ${member.displayName}`);
+                }
+                );
+            });
+        */
+    }
+    if(reaction.emoji.id == ":ok2:586723106039529472" && reaction.message.id === '719157122088173599') 
+    {
+      reaction.message.channel.send("U reacted OK2");
+    }
+
   });
   
   
@@ -47,7 +69,6 @@ module.exports = (client) => {
     if(!user) return;
     if(user.bot)return;
     if(!reaction.message.channel.guild) return;
-    console.log("Removed")
   });
   
 }

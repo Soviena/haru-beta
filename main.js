@@ -61,6 +61,8 @@ fs.readdir("./commands", (err, files) => {
   });
 });
 
+
+
 // MUSIC
 
 async function handleVideo(video, message, voiceChannel, playlist = true) {

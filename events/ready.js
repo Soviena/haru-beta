@@ -49,7 +49,6 @@ module.exports = (client) => {
     if(user.bot)return;
     if(!reaction.message.channel.guild) return;
     reaction.message.channel.send("U reacted");
-    console.log(reaction.message.id);
     if(reaction.emoji.id == "586723200281608193" && reaction.message.id === message_id) 
     {
         reaction.message.channel.send("U reacted OK1");

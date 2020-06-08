@@ -73,65 +73,83 @@ module.exports = (client) => {
         switch (reaction.emoji.name) {
           case "🇦":
           //member.addRole("597011179545690121");
-          member.send("Apex Legends Added")
+          member.send("Apex Legends Added");
           break;
           case "🇧":
           //member.addRole("597011179545690121");
-          member.send("")
+          member.send("Black Dessert Online added");
           break;
           case "🇨":
           //member.addRole("597011179545690121");
+          member.send("Brawlhalla Added");
           break;
           case "🇩":
           //member.addRole("597011179545690121");
+          member.send("The Forest added");
           break;
           case "🇪":
           //member.addRole("597011179545690121");
+          member.send("Counter Strike Global Offensive added");
           break;
           case "🇫":
           //member.addRole("597011179545690121");
+          member.send("Destiny 2 added");
           break;
           case "🇬":
           //member.addRole("597011179545690121");
+          member.send("Dota 2 added");
           break;
           case "🇭":
           //member.addRole("597011179545690121");
+          member.send("Fornite added");
           break;
           case "🇮":
           //member.addRole("597011179545690121");
+          member.send("GTA V Added");
           break;
           case "🇯":
           //member.addRole("597011179545690121");
+          member.send("Monster Hunter World added");
           break;
           case "🇰":
           //member.addRole("597011179545690121");
+          member.send("Minecraft Added");
           break;
           case "🇱":
           //member.addRole("597011179545690121");
+          member.send("Mobile Legends added");
           break;
           case "🇲":
           //member.addRole("597011179545690121");
+          member.send("OSU Added");
           break;
           case "🇳":
           //member.addRole("597011179545690121");
+          member.send("Overwatch added");
           break;
           case "🇴":
           //member.addRole("597011179545690121");
+          member.send("PUBG Mobile added");
           break;
           case "🇵":
           //member.addRole("597011179545690121");
+          member.send("PUBG PC Added");
           break;
           case "🇶":
           //member.addRole("597011179545690121");
+          member.send("Rainbow Six Added");
           break;
           case "🇷":
           //member.addRole("597011179545690121");
+          member.send("Pokemon GO Added");
           break;
           case "🇸":
           //member.addRole("597011179545690121");
+          member.send("Valorant Added");
           break;
           case "🇹":
           //member.addRole("597011179545690121");
+          member.send("FACTORIO ADDED");
           break;
       };
     }
@@ -178,7 +196,7 @@ module.exports = (client) => {
           break;
       };
     }
-    if(reaction.message.id === message_id2) 
+    if(reaction.message.id === message_id3) 
     {
         console.log(reaction.emoji.name);
         const member = reaction.message.guild.member(user);

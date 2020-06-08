@@ -68,32 +68,89 @@ module.exports = (client) => {
     if(!reaction.message.channel.guild) return;
     if(reaction.message.id === message_id1) 
     {
-        console.log(reaction.emoji.id);
-        switch (reaction.emoji.id) {
+        console.log(reaction.emoji.name);
+        switch (reaction.emoji.name) {
           case "🇦":
-          //member.addRole("597011179545690121").then((res) => {
-            reaction.message.channel.send(`AAA`)
-          //}).catch(console.error);
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`AAA`);
           break;
           case "🇧":
-          //member.addRole("597011179545690121").then((res) => {
-            reaction.message.channel.send(`BBB`)
-          //}).catch(console.error);
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`BBB`);
+          break;
+          case "🇨":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`CCC`);
+          break;
+          case "🇩":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`DDD`);
+          break;
+          case "🇪":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`EEE`);
+          break;
+          case "🇫":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`FFF`);
+          break;
+          case "🇬":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`GGG`);
+          break;
+          case "🇭":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`HHH`);
+          break;
+          case "🇮":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`III`);
+          break;
+          case "🇯":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`JJJ`);
+          break;
+          case "🇰":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`KKK`);
+          break;
+          case "🇱":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`LLL`);
+          break;
+          case "🇲":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`MMM`);
+          break;
+          case "🇳":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`NNN`);
+          break;
+          case "🇴":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`OOO`);
+          break;
+          case "🇵":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`PPP`);
+          break;
+          case "🇶":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`QQQ`);
+          break;
+          case "🇷":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`RRR`);
+          break;
+          case "🇸":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`SSS`);
+          break;
+          case "🇹":
+          //member.addRole("597011179545690121");
+            reaction.message.channel.send(`TTT`);
+          break;
       };
-        /*
-        reaction.message.channel.send("U reacted OK1");
-        guild.fetchMember(user) // fetch the user that reacted
-            .then((member) => 
-            {
-                let role = (member.guild.roles.find(role => role.name === "YOUR ROLE NAME HERE"));
-                member.addRole(role)
-                .then(() => 
-                {
-                    console.log(`Added the role to ${member.displayName}`);
-                }
-                );
-            });
-        */
     }
   });
   

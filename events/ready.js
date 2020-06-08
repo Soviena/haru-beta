@@ -34,11 +34,29 @@ module.exports = (client) => {
   
   setInterval(changing_status, 5000);
 
-  let channel_id = "485436637665558531"; 
-  let message_id = "719164766320459776";
+  // DETECT REACTION
 
-  client.channels.get(channel_id).fetchMessage(message_id).then(m => {
-    console.log("Cached reaction message.");
+  let channel_id = "557928889062653974"; 
+  let message_id1 = "719386602085941331";
+  let message_id2 = "719386490685227080";
+  let message_id3 = "719386397177544705";
+
+  client.channels.get(channel_id).fetchMessage(message_id1).then(m => {
+    console.log("Cached reaction message 1");
+    }).catch(e => {
+    console.error("Error loading message.");
+    console.error(e);
+  });
+
+  client.channels.get(channel_id).fetchMessage(message_id2).then(m => {
+    console.log("Cached reaction message 2");
+    }).catch(e => {
+    console.error("Error loading message.");
+    console.error(e);
+  });
+
+  client.channels.get(channel_id).fetchMessage(message_id3).then(m => {
+    console.log("Cached reaction message 3");
     }).catch(e => {
     console.error("Error loading message.");
     console.error(e);
@@ -48,10 +66,22 @@ module.exports = (client) => {
     if(!user) return;
     if(user.bot)return;
     if(!reaction.message.channel.guild) return;
-    if(reaction.emoji.id == "586723200281608193" && reaction.message.id === message_id) 
+    if(reaction.message.id === message_id1) 
     {
-        reaction.message.channel.send("U reacted OK1");
+        console.log(reaction.emoji.id);
+        switch (reaction.emoji.id) {
+          case "🇦":
+          //member.addRole("597011179545690121").then((res) => {
+            reaction.message.channel.send(`AAA`)
+          //}).catch(console.error);
+          break;
+          case "🇧":
+          //member.addRole("597011179545690121").then((res) => {
+            reaction.message.channel.send(`BBB`)
+          //}).catch(console.error);
+      };
         /*
+        reaction.message.channel.send("U reacted OK1");
         guild.fetchMember(user) // fetch the user that reacted
             .then((member) => 
             {
@@ -65,11 +95,6 @@ module.exports = (client) => {
             });
         */
     }
-    if(reaction.emoji.id == "586723106039529472" && reaction.message.id === message_id) 
-    {
-      reaction.message.channel.send("U reacted OK2");
-    }
-
   });
   
   

@@ -69,86 +69,101 @@ module.exports = (client) => {
     if(reaction.message.id === message_id1) 
     {
         console.log(reaction.emoji.name);
+        const member = reaction.message.member
         switch (reaction.emoji.name) {
           case "🇦":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`AAA`);
           break;
           case "🇧":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`BBB`);
           break;
           case "🇨":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`CCC`);
           break;
           case "🇩":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`DDD`);
           break;
           case "🇪":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`EEE`);
           break;
           case "🇫":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`FFF`);
           break;
           case "🇬":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`GGG`);
           break;
           case "🇭":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`HHH`);
           break;
           case "🇮":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`III`);
           break;
           case "🇯":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`JJJ`);
           break;
           case "🇰":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`KKK`);
           break;
           case "🇱":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`LLL`);
           break;
           case "🇲":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`MMM`);
           break;
           case "🇳":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`NNN`);
           break;
           case "🇴":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`OOO`);
           break;
           case "🇵":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`PPP`);
           break;
           case "🇶":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`QQQ`);
           break;
           case "🇷":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`RRR`);
           break;
           case "🇸":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`SSS`);
           break;
           case "🇹":
           //member.addRole("597011179545690121");
-            reaction.message.channel.send(`TTT`);
+          break;
+      };
+    }
+    if(reaction.message.id === message_id2) 
+    {
+        console.log(reaction.emoji.name);
+        const member = reaction.message.member
+        switch (reaction.emoji.name) {
+          case "💻":
+          //member.addRole("597011179545690121");
+          break;
+          case "📷":
+          //member.addRole("597011179545690121");
+          break;
+          case "📝":
+          //member.addRole("597011179545690121");
+          break;
+          case "📏":
+          //member.addRole("597011179545690121");
+          break;
+          case "✏️":
+          //member.addRole("597011179545690121");
+          break;
+          case "♨️":
+          //member.addRole("597011179545690121");
+          break;
+          case "🇯🇵":
+          //member.addRole("597011179545690121");
+          break;
+          case "💮":
+          //member.addRole("597011179545690121");
+          break;
+          case "🔞":
+          //member.addRole("597011179545690121");
           break;
       };
     }

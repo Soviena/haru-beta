@@ -18,7 +18,7 @@ exports.run = (client, message) => {
     .then(() => client.user.lastMessage.react('🔺'))    
     .then(() => client.user.lastMessage.react('🔴'))    
     .catch(() => console.error('One of the emojis failed to react.'));
-
+/*
     embed.setTitle(`Identity & Hobby`)
     .addField(':computer: : Programmer',":camera: : Photographer")
     .addField(':pencil: : Editor',":straight_ruler: : Designer")
@@ -37,7 +37,7 @@ exports.run = (client, message) => {
     .then(() => client.user.lastMessage.react('💮'))    
     .then(() => client.user.lastMessage.react('🔞'))    
     .catch(() => console.error('One of the emojis failed to react.'));
-
+*/
     embed.setTitle(`GAME ROLES`)
     .addField(':regional_indicator_a: : Apex Legend',":regional_indicator_b: : Black Dessert")
     .addField(':regional_indicator_c: : Brawlhalla',":regional_indicator_d: : The Forest")
@@ -77,6 +77,6 @@ exports.run = (client, message) => {
     .then(() => client.user.lastMessage.react("586723200281608193"))
     .then(() => client.user.lastMessage.react("586723106039529472"))
     .catch(() => console.error('One of the emojis failed to react.'));
-    */
+    
     }
     

@@ -69,13 +69,15 @@ module.exports = (client) => {
     if(reaction.message.id === message_id1) 
     {
         console.log(reaction.emoji.name);
-        const member = reaction.message.member
+        const member = reaction.message.guild.member(user);
         switch (reaction.emoji.name) {
           case "🇦":
           //member.addRole("597011179545690121");
+          member.send("Apex Legends Added")
           break;
           case "🇧":
           //member.addRole("597011179545690121");
+          member.send("")
           break;
           case "🇨":
           //member.addRole("597011179545690121");
@@ -136,43 +138,82 @@ module.exports = (client) => {
     if(reaction.message.id === message_id2) 
     {
         console.log(reaction.emoji.name);
-        const member = reaction.message.member
+        const member = reaction.message.guild.member(user);
         switch (reaction.emoji.name) {
           case "💻":
           //member.addRole("597011179545690121");
-          console.log(reaction);
+          member.send("Programmer added")
           break;
           case "📷":
           //member.addRole("597011179545690121");
-          member.send("Photographer");
+          member.send("Photographer added");
           break;
           case "📝":
           //member.addRole("597011179545690121");
-          member.send("Editor");
+          member.send("Editor added");
           break;
           case "📏":
           //member.addRole("597011179545690121");
-          member.send("Designer");
+          member.send("Designer added");
           break;
           case "✏️":
           //member.addRole("597011179545690121");
-          member.send("Artist");
+          member.send("Artist added");
           break;
           case "♨️":
           //member.addRole("597011179545690121");
-          member.send("Redditor");
+          member.send("Redditor added");
           break;
           case "🇯🇵":
           //member.addRole("597011179545690121");
-          member.send("Otaku");
+          member.send("Otaku added");
           break;
           case "💮":
           //member.addRole("597011179545690121");
-          member.send("Holo Gangs");
+          member.send("Holo Gangs added");
           break;
           case "🔞":
           //member.addRole("597011179545690121");
-          member.send("R++");
+          member.send("R++ added");
+          break;
+      };
+    }
+    if(reaction.message.id === message_id2) 
+    {
+        console.log(reaction.emoji.name);
+        const member = reaction.message.guild.member(user);
+        switch (reaction.emoji.name) {
+          case "🟢":
+          //member.addRole("597011179545690121");
+          member.send("Calm green color addedd")
+          break;
+          case "🟩":
+          //member.addRole("597011179545690121");
+          member.send("Lime Green color addedd");
+          break;
+          case "🟡":
+          //member.addRole("597011179545690121");
+          member.send("Yellow color addedd");
+          break;
+          case "🟠":
+          //member.addRole("597011179545690121");
+          member.send("Orangers color addedd");
+          break;
+          case "🟣":
+          //member.addRole("597011179545690121");
+          member.send("Purplish color addedd");
+          break;
+          case "🔵":
+          //member.addRole("597011179545690121");
+          member.send("Sky Blue color addedd");
+          break;
+          case "🔺":
+          //member.addRole("597011179545690121");
+          member.send("Magentaa color addedd");
+          break;
+          case "🔴":
+          //member.addRole("597011179545690121");
+          member.send("Bloody Redd color addedd");
           break;
       };
     }

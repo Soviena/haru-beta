@@ -72,83 +72,83 @@ module.exports = (client) => {
         const member = reaction.message.guild.member(user);
         switch (reaction.emoji.name) {
           case "🇦":
-          //member.addRole("545246502063177749");
+          //member.addRole("545246502063177749"); //APEX
           member.send("Role Apex Legends Added");
           break;
           case "🇧":
-          //member.addRole("597011179545690121");
+          //member.addRole("494371659038588949"); //BDO
           member.send("Role Black Dessert Online added");
           break;
           case "🇨":
-          //member.addRole("597011179545690121");
+          //member.addRole("563383750369607690"); //Brawlhalla
           member.send("Role Brawlhalla Added");
           break;
           case "🇩":
-          //member.addRole("597011179545690121");
+          //member.addRole("555729510780239894"); //The Forest
           member.send("Role The Forest added");
           break;
           case "🇪":
-          //member.addRole("597011179545690121");
+          //member.addRole("490508688981753876"); //CSGO
           member.send("Role Counter Strike Global Offensive added");
           break;
           case "🇫":
-          //member.addRole("597011179545690121");
+          //member.addRole("655491502264418325"); //Destiny 2
           member.send("Role Destiny 2 added");
           break;
           case "🇬":
-          //member.addRole("597011179545690121");
+          //member.addRole("536555779180724224"); //Dota2
           member.send("Role Dota 2 added");
           break;
           case "🇭":
-          //member.addRole("597011179545690121");
+          //member.addRole("490509288033222657"); //Fornite
           member.send("Role Fornite added");
           break;
           case "🇮":
-          //member.addRole("597011179545690121");
+          //member.addRole("586432880016752672");
           member.send("Role GTA V Added");
           break;
           case "🇯":
-          //member.addRole("597011179545690121");
+          //member.addRole("580739241647276032");
           member.send("Role Monster Hunter World added");
           break;
           case "🇰":
-          //member.addRole("597011179545690121");
+          //member.addRole("545241660976660481");
           member.send("Role Minecraft Added");
           break;
           case "🇱":
-          //member.addRole("597011179545690121");
+          //member.addRole("718306070677946520");
           member.send("Role Mobile Legends added");
           break;
           case "🇲":
-          //member.addRole("597011179545690121");
+          //member.addRole("516480829036167171");
           member.send("Role OSU Added");
           break;
           case "🇳":
-          //member.addRole("597011179545690121");
+          //member.addRole("518086052968267777");
           member.send("Role Overwatch added");
           break;
           case "🇴":
-          //member.addRole("597011179545690121");
+          //member.addRole("518084786137464833");
           member.send("Role PUBG Mobile added");
           break;
           case "🇵":
-          //member.addRole("597011179545690121");
+          //member.addRole("538707253407121410");
           member.send("Role PUBG PC Added");
           break;
           case "🇶":
-          //member.addRole("597011179545690121");
+          //member.addRole("586732927115591680");
           member.send("Role Rainbow Six Added");
           break;
           case "🇷":
-          //member.addRole("597011179545690121");
+          //member.addRole("586739653982420992");
           member.send("Role Pokemon GO Added");
           break;
           case "🇸":
-          //member.addRole("597011179545690121");
+          //member.addRole("718084875361714276");
           member.send("Role Valorant Added");
           break;
           case "🇹":
-          //member.addRole("597011179545690121");
+          //member.addRole("603565310942904364");
           member.send("Role FACTORIO Added");
           break;
       };
@@ -159,39 +159,39 @@ module.exports = (client) => {
         const member = reaction.message.guild.member(user);
         switch (reaction.emoji.name) {
           case "💻":
-          //member.addRole("597011179545690121");
+          //member.addRole("718743873911783464");
           member.send("Programmer added")
           break;
           case "📷":
-          //member.addRole("597011179545690121");
+          //member.addRole("718743837362880623");
           member.send("Photographer added");
           break;
           case "📝":
-          //member.addRole("597011179545690121");
+          //member.addRole("718747251278872676");
           member.send("Editor added");
           break;
           case "📏":
-          //member.addRole("597011179545690121");
+          //member.addRole("718743844442603582");
           member.send("Designer added");
           break;
           case "✏️":
-          //member.addRole("597011179545690121");
+          //member.addRole("718743830706257993");
           member.send("Artist added");
           break;
           case "♨️":
-          //member.addRole("597011179545690121");
+          //member.addRole("719048962887385089");
           member.send("Redditor added");
           break;
           case "🇯🇵":
-          //member.addRole("597011179545690121");
+          //member.addRole("655491496450981908");
           member.send("Otaku added");
           break;
           case "💮":
-          //member.addRole("597011179545690121");
+          //member.addRole("719147904387907584");
           member.send("Holo Gangs added");
           break;
           case "🔞":
-          //member.addRole("597011179545690121");
+          //member.addRole("541757912448761857");
           member.send("R++ added");
           break;
       };
@@ -202,35 +202,35 @@ module.exports = (client) => {
         const member = reaction.message.guild.member(user);
         switch (reaction.emoji.name) {
           case "🟢":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748118241378304");
           member.send("Calm green color addedd")
           break;
           case "🟩":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748137845424149");
           member.send("Lime Green color addedd");
           break;
           case "🟡":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748112037871616");
           member.send("Yellow color addedd");
           break;
           case "🟠":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748135975026699");
           member.send("Orangers color addedd");
           break;
           case "🟣":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748138885873664");
           member.send("Purplish color addedd");
           break;
           case "🔵":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748122117046272");
           member.send("Sky Blue color addedd");
           break;
           case "🔺":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748126399299586");
           member.send("Magentaa color addedd");
           break;
           case "🔴":
-          //member.addRole("597011179545690121");
+          //member.addRole("718750570596270084");
           member.send("Bloody Redd color addedd");
           break;
       };
@@ -247,83 +247,83 @@ module.exports = (client) => {
         const member = reaction.message.guild.member(user);
         switch (reaction.emoji.name) {
           case "🇦":
-          //member.addRole("597011179545690121");
+          //member.addRole("545246502063177749"); //APEX
           member.send("Role Apex Legends Removed");
           break;
           case "🇧":
-          //member.addRole("597011179545690121");
+          //member.addRole("494371659038588949"); //BDO
           member.send("Role Black Dessert Online Removed");
           break;
           case "🇨":
-          //member.addRole("597011179545690121");
+          //member.addRole("563383750369607690"); //Brawlhalla
           member.send("Role Brawlhalla Removed");
           break;
           case "🇩":
-          //member.addRole("597011179545690121");
+          //member.addRole("555729510780239894"); //The Forest
           member.send("Role The Forest Removed");
           break;
           case "🇪":
-          //member.addRole("597011179545690121");
+          //member.addRole("490508688981753876"); //CSGO
           member.send("Role Counter Strike Global Offensive Removed");
           break;
           case "🇫":
-          //member.addRole("597011179545690121");
+          //member.addRole("655491502264418325"); //Destiny 2
           member.send("Role Destiny 2 Removed");
           break;
           case "🇬":
-          //member.addRole("597011179545690121");
+          //member.addRole("536555779180724224"); //Dota2
           member.send("Role Dota 2 Removed");
           break;
           case "🇭":
-          //member.addRole("597011179545690121");
+          //member.addRole("490509288033222657"); //Fornite
           member.send("Role Fornite Removed");
           break;
           case "🇮":
-          //member.addRole("597011179545690121");
+          //member.addRole("586432880016752672");
           member.send("Role GTA V Removed");
           break;
           case "🇯":
-          //member.addRole("597011179545690121");
+          //member.addRole("580739241647276032");
           member.send("Role Monster Hunter World Removed");
           break;
           case "🇰":
-          //member.addRole("597011179545690121");
+          //member.addRole("545241660976660481");
           member.send("Role Minecraft Removed");
           break;
           case "🇱":
-          //member.addRole("597011179545690121");
+          //member.addRole("718306070677946520");
           member.send("Role Mobile Legends Removed");
           break;
           case "🇲":
-          //member.addRole("597011179545690121");
+          //member.addRole("516480829036167171");
           member.send("Role OSU Removed");
           break;
           case "🇳":
-          //member.addRole("597011179545690121");
+          //member.addRole("518086052968267777");
           member.send("Role Overwatch Removed");
           break;
           case "🇴":
-          //member.addRole("597011179545690121");
+          //member.addRole("518084786137464833");
           member.send("Role PUBG Mobile Removed");
           break;
           case "🇵":
-          //member.addRole("597011179545690121");
+          //member.addRole("538707253407121410");
           member.send("Role PUBG PC Removed");
           break;
           case "🇶":
-          //member.addRole("597011179545690121");
+          //member.addRole("586732927115591680");
           member.send("Role Rainbow Six Removed");
           break;
           case "🇷":
-          //member.addRole("597011179545690121");
+          //member.addRole("586739653982420992");
           member.send("Role Pokemon GO Removed");
           break;
           case "🇸":
-          //member.addRole("597011179545690121");
+          //member.addRole("718084875361714276");
           member.send("Role Valorant Removed");
           break;
           case "🇹":
-          //member.addRole("597011179545690121");
+          //member.addRole("603565310942904364");
           member.send("Role FACTORIO Removed");
           break;
       };
@@ -334,39 +334,39 @@ module.exports = (client) => {
         const member = reaction.message.guild.member(user);
         switch (reaction.emoji.name) {
           case "💻":
-          //member.addRole("597011179545690121");
+          //member.addRole("718743873911783464");
           member.send("Programmer Removed")
           break;
           case "📷":
-          //member.addRole("597011179545690121");
+          //member.addRole("718743837362880623");
           member.send("Photographer Removed");
           break;
           case "📝":
-          //member.addRole("597011179545690121");
+          //member.addRole("718747251278872676");
           member.send("Editor Removed");
           break;
           case "📏":
-          //member.addRole("597011179545690121");
+          //member.addRole("718743844442603582");
           member.send("Designer Removed");
           break;
           case "✏️":
-          //member.addRole("597011179545690121");
+          //member.addRole("718743830706257993");
           member.send("Artist Removed");
           break;
           case "♨️":
-          //member.addRole("597011179545690121");
+          //member.addRole("719048962887385089");
           member.send("Redditor Removed");
           break;
           case "🇯🇵":
-          //member.addRole("597011179545690121");
+          //member.addRole("655491496450981908");
           member.send("Otaku Removed");
           break;
           case "💮":
-          //member.addRole("597011179545690121");
+          //member.addRole("719147904387907584");
           member.send("Holo Gangs Removed");
           break;
           case "🔞":
-          //member.addRole("597011179545690121");
+          //member.addRole("541757912448761857");
           member.send("R++ Removed");
           break;
       };
@@ -377,35 +377,35 @@ module.exports = (client) => {
         const member = reaction.message.guild.member(user);
         switch (reaction.emoji.name) {
           case "🟢":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748118241378304");
           member.send("Calm green color Removed")
           break;
           case "🟩":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748137845424149");
           member.send("Lime Green color Removed");
           break;
           case "🟡":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748112037871616");
           member.send("Yellow color Removed");
           break;
           case "🟠":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748135975026699");
           member.send("Orangers color Removed");
           break;
           case "🟣":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748138885873664");
           member.send("Purplish color Removed");
           break;
           case "🔵":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748122117046272");
           member.send("Sky Blue color Removed");
           break;
           case "🔺":
-          //member.addRole("597011179545690121");
+          //member.addRole("718748126399299586");
           member.send("Magentaa color Removed");
           break;
           case "🔴":
-          //member.addRole("597011179545690121");
+          //member.addRole("718750570596270084");
           member.send("Bloody Redd color Removed");
           break;
       };

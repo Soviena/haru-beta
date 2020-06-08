@@ -200,34 +200,42 @@ module.exports = (client) => {
         switch (reaction.emoji.name) {
           case "🟢":
           member.addRole("718748118241378304");
+          member.addRole("557157104197173274");
           member.send("Calm green color addedd")
           break;
           case "🟩":
           member.addRole("718748137845424149");
+          member.addRole("557157104197173274");
           member.send("Lime Green color addedd");
           break;
           case "🟡":
           member.addRole("718748112037871616");
+          member.addRole("557157104197173274");
           member.send("Yellow color addedd");
           break;
           case "🟠":
           member.addRole("718748135975026699");
+          member.addRole("557157104197173274");
           member.send("Orangers color addedd");
           break;
           case "🟣":
           member.addRole("718748138885873664");
+          member.addRole("557157104197173274");
           member.send("Purplish color addedd");
           break;
           case "🔵":
           member.addRole("718748122117046272");
+          member.addRole("557157104197173274");
           member.send("Sky Blue color addedd");
           break;
           case "🔺":
           member.addRole("718748126399299586");
+          member.addRole("557157104197173274");
           member.send("Magentaa color addedd");
           break;
           case "🔴":
           member.addRole("718750570596270084");
+          member.addRole("557157104197173274");
           member.send("Bloody Redd color addedd");
           break;
       };
@@ -372,34 +380,42 @@ module.exports = (client) => {
         switch (reaction.emoji.name) {
           case "🟢":
           member.removeRole("718748118241378304");
+          member.removeRole("557157104197173274");
           member.send("Calm green color Removed")
           break;
           case "🟩":
           member.removeRole("718748137845424149");
+          member.removeRole("557157104197173274");
           member.send("Lime Green color Removed");
           break;
           case "🟡":
           member.removeRole("718748112037871616");
+          member.removeRole("557157104197173274");
           member.send("Yellow color Removed");
           break;
           case "🟠":
           member.removeRole("718748135975026699");
+          member.removeRole("557157104197173274");
           member.send("Orangers color Removed");
           break;
           case "🟣":
           member.removeRole("718748138885873664");
+          member.removeRole("557157104197173274");
           member.send("Purplish color Removed");
           break;
           case "🔵":
           member.removeRole("718748122117046272");
+          member.removeRole("557157104197173274");
           member.send("Sky Blue color Removed");
           break;
           case "🔺":
           member.removeRole("718748126399299586");
+          member.removeRole("557157104197173274");
           member.send("Magentaa color Removed");
           break;
           case "🔴":
-          member.addRole("718750570596270084");
+          member.removeRole("718750570596270084");
+          member.removeRole("557157104197173274");
           member.send("Bloody Redd color Removed");
           break;
       };

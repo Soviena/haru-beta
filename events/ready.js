@@ -140,30 +140,39 @@ module.exports = (client) => {
         switch (reaction.emoji.name) {
           case "💻":
           //member.addRole("597011179545690121");
+          console.log(reaction);
           break;
           case "📷":
           //member.addRole("597011179545690121");
+          member.send("Photographer");
           break;
           case "📝":
           //member.addRole("597011179545690121");
+          member.send("Editor");
           break;
           case "📏":
           //member.addRole("597011179545690121");
+          member.send("Designer");
           break;
           case "✏️":
           //member.addRole("597011179545690121");
+          member.send("Artist");
           break;
           case "♨️":
           //member.addRole("597011179545690121");
+          member.send("Redditor");
           break;
           case "🇯🇵":
           //member.addRole("597011179545690121");
+          member.send("Otaku");
           break;
           case "💮":
           //member.addRole("597011179545690121");
+          member.send("Holo Gangs");
           break;
           case "🔞":
           //member.addRole("597011179545690121");
+          member.send("R++");
           break;
       };
     }
